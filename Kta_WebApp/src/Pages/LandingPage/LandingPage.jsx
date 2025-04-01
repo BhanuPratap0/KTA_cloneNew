@@ -3,9 +3,6 @@ import './LandingPage.scss'
 function LandingPage() {
   return (
     <div className='LandingPage'>
-
-
-
       <div className='LandingLines'>
         <p className='LandingLineHeadding'>
           Innovative Solutions in
@@ -24,8 +21,6 @@ function LandingPage() {
         <img src="public/KTABanner.png" className='landingBanner' width={'45%'} alt="" />
         <div className="bannerPodium"></div>
       </div>
-      
-
     </div>
   )
 }

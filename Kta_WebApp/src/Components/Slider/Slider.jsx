@@ -15,7 +15,6 @@ function FadeSlider() {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        
       <div>
         <img src="./FirstSliderFirstPic.png" width={'100%'} alt="" />        
       </div>
@@ -28,7 +27,6 @@ function FadeSlider() {
       <div>
         <img src="./FirstSliderFirstPic.png" width={'100%'} alt="" />        
       </div>
-      
       </Slider>
     </div>
   );
