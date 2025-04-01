@@ -18,7 +18,7 @@ function NavBar() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link className='navLinkFirst' href="#action2">ABOUT</Nav.Link>
+            <Nav.Link className='navLink' href="#action2">ABOUT</Nav.Link>
 
             <NavDropdown className='navLink' title="PRODUCTS" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
@@ -42,7 +42,7 @@ function NavBar() {
             <Nav.Link className='navLink' href="#action2">CALCULATORS</Nav.Link>
             <Nav.Link className='navLink' href="#action2">CAREERS</Nav.Link>
             
-            <Nav.Link  href="#action2">CONTACT</Nav.Link>
+            <Nav.Link  href="#action2" className='contactButton'>CONTACT</Nav.Link>
             
              
           </Nav>

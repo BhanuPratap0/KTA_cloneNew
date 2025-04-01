@@ -74,25 +74,30 @@ input[type="search"] {
 .navLink {
   color: #000;
   font-family: Poppins;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
 }
 
-.navLinkFirst {
-  font-family: Manrope;
-  font-size: 1rem;
+.contactButton {
+  display: flex;
+  padding: 11.945px 23.89px;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 5.72rem;
+  background: #e31e24;
+  color: #fff !important;
+  font-family: Poppins;
+  font-size: 0.69rem;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 400;
   line-height: normal;
-  background: var(
-    --brand,
-    linear-gradient(100deg, #e31e24 7.47%, #262065 92.53%)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-  top: 1px;
+  margin-right: 1rem;
+  width: 100px;
 }
