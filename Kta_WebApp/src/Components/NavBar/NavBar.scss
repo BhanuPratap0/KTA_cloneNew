@@ -1,0 +1,103 @@
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+input[type="search"] {
+  background: #ededed
+    url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat
+    12px center;
+  border: solid 1px #ccc;
+
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+
+  /* Align to the right initially */
+  // position: relative;
+  // right: 0;
+}
+
+#demo-2 {
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+}
+
+#demo-2 input[type="search"] {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  gap: 4.632px;
+  border: 1px solid #e8e8e8;
+
+  color: transparent;
+  cursor: pointer;
+
+  /* Align to the right */
+  text-align: left;
+  // transform: translateX(40px);
+}
+
+#demo-2 input[type="search"]:hover {
+  background-color: #fff;
+}
+
+#demo-2 input[type="search"]:focus {
+  width: 200px; /* Expand width */
+  padding-left: 32px;
+  color: #000;
+  background-color: #fff;
+  cursor: auto;
+}
+
+#demo-2 input:-moz-placeholder {
+  color: transparent;
+}
+
+#demo-2 input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.navLink {
+  color: #000;
+  font-family: Poppins;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.contactButton {
+  display: flex;
+  padding: 11.945px 23.89px;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 5.72rem;
+  background: #e31e24;
+  color: #fff !important;
+  font-family: Poppins;
+  font-size: 0.69rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 1rem;
+  width: 100px;
+}
