@@ -1,69 +1,98 @@
-input[type=search] {
-	-webkit-appearance: textfield;
-	-webkit-box-sizing: content-box;
-	font-family: inherit;
-	font-size: 100%;
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
 }
 
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button {
-	display: none; 
+  display: none;
 }
 
-input[type=search] {
-	background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
-	border: solid 1px #ccc;
-	padding: 9px 10px 9px 32px;
-	width: 55px;
-	
-	-webkit-border-radius: 10em;
-	-moz-border-radius: 10em;
-	border-radius: 10em;
-	
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	transition: all .5s;
+input[type="search"] {
+  background: #ededed
+    url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat
+    12px center;
+  border: solid 1px #ccc;
 
-	/* Align to the right initially */
-	position: relative;
-	right: 0;
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+
+  /* Align to the right initially */
+  // position: relative;
+  // right: 0;
 }
 
 #demo-2 {
-	display: flex;
-	justify-content: flex-end; /* Align to the right */
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
 }
 
-#demo-2 input[type=search] {
-	width: 15px;
-	padding-left: 10px;
-	color: transparent;
-	cursor: pointer;
+#demo-2 input[type="search"] {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  gap: 4.632px;
+  border: 1px solid #e8e8e8;
 
-	/* Align to the right */
-	text-align: right;
-	// transform: translateX(40px);
+  color: transparent;
+  cursor: pointer;
+
+  /* Align to the right */
+  text-align: left;
+  // transform: translateX(40px);
 }
 
-#demo-2 input[type=search]:hover {
-	background-color: #fff;
+#demo-2 input[type="search"]:hover {
+  background-color: #fff;
 }
 
-#demo-2 input[type=search]:focus {
-	width: 200px; /* Expand width */
-	padding-left: 32px;
-	color: #000;
-	background-color: #fff;
-	cursor: auto;
-
-	/* Shift left to expand */
-	transform: translateX(-140px);
+#demo-2 input[type="search"]:focus {
+  width: 200px; /* Expand width */
+  padding-left: 32px;
+  color: #000;
+  background-color: #fff;
+  cursor: auto;
 }
 
 #demo-2 input:-moz-placeholder {
-	color: transparent;
+  color: transparent;
 }
 
 #demo-2 input::-webkit-input-placeholder {
-	color: transparent;
+  color: transparent;
+}
+
+.navLink {
+  color: #000;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.navLinkFirst {
+  font-family: Manrope;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  background: var(
+    --brand,
+    linear-gradient(100deg, #e31e24 7.47%, #262065 92.53%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  top: 1px;
 }
