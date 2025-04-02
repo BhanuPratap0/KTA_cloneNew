@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+
+  .productContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+  }
+
+  .button {
+    border-radius: 91.52px;
+    border: 1px solid #0c0c0c;
+    color: #0c0c0c;
+    font-family: Poppins;
+    font-size: 11.239px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
