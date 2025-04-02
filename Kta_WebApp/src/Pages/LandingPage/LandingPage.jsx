@@ -1,28 +1,19 @@
-import React from 'react'
-import './LandingPage.scss'
+import React from "react";
+import "./LandingPage.scss";
+import ContactNav from "../../Components/ContactNav/ContactNav";
+import NavBar from "../../Components/NavBar/NavBar";
+import HeroSection from "./HeroSection/HeroSection";
+import FadeSlider from "../../Components/Slider/Slider";
+import Container from "react-bootstrap/esm/Container";
 function LandingPage() {
   return (
-    <div className='LandingPage'>
-      <div className='LandingLines'>
-        <p className='LandingLineHeadding'>
-          Innovative Solutions in
-          <p>Ceramics, Stone & Surface Care</p>
-        </p>
-        <p className='LandingLineSubHeadding'>High-quality materials and expert solutions for durability, aesthetics, and protection.
-          <br />Trusted by professionals worldwide.</p>
-      </div>
-
-      <div className='GradientButton'>
-        <p>Explore Our Products </p>
-      </div>
-
-      <div className='landingEnding' >
-        <div className="redGradient"></div>
-        <img src="public/KTABanner.png" className='landingBanner' width={'45%'} alt="" />
-        <div className="bannerPodium"></div>
-      </div>
-    </div>
-  )
+    <Container className="container">
+      <ContactNav />
+      <NavBar />
+      <HeroSection />
+      <FadeSlider />
+    </Container>
+  );
 }
 
-export default LandingPage
+export default LandingPage;
