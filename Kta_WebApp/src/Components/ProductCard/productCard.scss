@@ -1,0 +1,29 @@
+.productContainer {
+  width: 220px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  font-family: Poppins;
+
+  .productImg {
+    height: 265px;
+    border-radius: 24px;
+    margin-bottom: 24px;
+  }
+
+  .title {
+    color: #000;
+    font-size: 12.757px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .description {
+    color: #3e3e3e;
+    font-size: 10.934px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

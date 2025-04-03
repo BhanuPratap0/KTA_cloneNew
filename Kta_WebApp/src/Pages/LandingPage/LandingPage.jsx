@@ -6,6 +6,7 @@ import HeroSection from "./HeroSection/HeroSection";
 import FadeSlider from "../../Components/Slider/Slider";
 import Container from "react-bootstrap/esm/Container";
 import Testimonials from "./Testimonials/Testimonials";
+import ShowCaseSection from "./ShowCaseSection/ShowCaseSection";
 function LandingPage() {
   return (
     <Container className="container">
@@ -14,6 +15,7 @@ function LandingPage() {
       <HeroSection />
       <FadeSlider />
       <Testimonials/>
+      <ShowCaseSection />
     </Container>
   );
 }
