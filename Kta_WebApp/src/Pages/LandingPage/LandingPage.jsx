@@ -14,8 +14,8 @@ function LandingPage() {
       <NavBar />
       <HeroSection />
       <FadeSlider />
-      <Testimonials/>
       <ShowCaseSection />
+      <Testimonials />
     </Container>
   );
 }

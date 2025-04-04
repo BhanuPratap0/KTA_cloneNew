@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import HeadingComp from "../../../Components/HeadingComp/HeadingComp";
 import "./Testimonials.scss";
 import TestiCards from "../../../Components/TestiCards/TestiCards";
+import { testimonialData } from "@/Data/LandingPage";
 
 const Testimonials = () => {
   const testiCardsRef = useRef(null); // Reference for the testiCards div
@@ -18,7 +19,6 @@ const Testimonials = () => {
     }
   };
 
-  // Scroll left handler
   const scrollLeft = () => {
     if (testiCardsRef.current) {
       testiCardsRef.current.scrollBy({
@@ -29,7 +29,6 @@ const Testimonials = () => {
     } // Check after a small delay    }
   };
 
-  // Scroll right handler
   const scrollRight = () => {
     if (testiCardsRef.current) {
       testiCardsRef.current.scrollBy({
@@ -40,55 +39,10 @@ const Testimonials = () => {
     }
   };
 
-  // Check scroll buttons when component mounts and when scrolling
   useEffect(() => {
-    checkScrollButtons(); // Initial check on mount
-  }, []); // Empty dependency array ensures it runs once
+    checkScrollButtons();
+  }, []);
 
-  const dataTest = [
-    {
-      comment:
-        "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-      profilePic: "./FirstSliderFirstPic.png",
-      name: "Serhiy Hipskyy",
-      designation: "CEO Universal",
-    },
-    {
-      comment:
-        "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-      profilePic: "./FirstSliderFirstPic.png",
-      name: "Serhiy Hipskyy",
-      designation: "CEO Universal",
-    },
-    {
-      comment:
-        "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-      profilePic: "./FirstSliderFirstPic.png",
-      name: "Serhiy Hipskyy",
-      designation: "CEO Universal",
-    },
-    {
-      comment:
-        "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-      profilePic: "./FirstSliderFirstPic.png",
-      name: "Serhiy Hipskyy",
-      designation: "CEO Universal",
-    },
-    {
-      comment:
-        "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-      profilePic: "./FirstSliderFirstPic.png",
-      name: "Serhiy Hipskyy",
-      designation: "CEO Universal",
-    },
-    {
-      comment:
-        "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-      profilePic: "./FirstSliderFirstPic.png",
-      name: "Serhiy Hipskyy",
-      designation: "CEO Universal",
-    }, 
-  ];
   return (
     <div className="testimonials">
       <div className="headingSection">
@@ -102,7 +56,7 @@ const Testimonials = () => {
           {canScrollLeft && <img src="./left-arrow.svg" alt="" />}
         </button>
         <div className="testiCards" ref={testiCardsRef}>
-          {dataTest.map((item, index) => (
+          {testimonialData.map((item, index) => (
             <TestiCards key={index} data={item} />
           ))}
         </div>

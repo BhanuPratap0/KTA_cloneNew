@@ -3,7 +3,9 @@ import "./ProductCard.scss";
 const ProductCard = ({ data }) => {
   return (
     <div className="productContainer">
-      <img src={data.img} alt="ProductImg" className="productImg" />
+      <div className="productImg">
+        <img src={data.img} alt="ProductImg" />
+      </div>
       <div className="title">{data.title}</div>
       <div className="description">{data.description}</div>
     </div>
