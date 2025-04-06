@@ -2,7 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './FirstSliderData.js'
+import { firstSliderData } from "@/Data/LandingPage";
+import "./FadeSlider.scss"
 function FadeSlider() {
   const settings = {
     fade:true,
@@ -15,18 +16,13 @@ function FadeSlider() {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-      <div>
-        <img src="./FirstSliderFirstPic.png" width={'100%'} alt="" />        
-      </div>
-      <div>
-        <img src="./FirstSliderFirstPic.png" width={'100%'} alt="" />        
-      </div>
-      <div>
-        <img src="./FirstSliderFirstPic.png" width={'100%'} alt="" />        
-      </div>
-      <div>
-        <img src="./FirstSliderFirstPic.png" width={'100%'} alt="" />        
-      </div>
+        {
+          firstSliderData.map((data,index)=>(
+            <div className="sliderImg">
+              <img src={data} key={index} />
+            </div>
+          ))
+        }
       </Slider>
     </div>
   );

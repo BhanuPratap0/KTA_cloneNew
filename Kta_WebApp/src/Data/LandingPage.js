@@ -92,3 +92,21 @@ export const featureData = [
     description: "Dedicated professionals guiding you at every step.",
   },
 ];
+
+export const firstSliderData=[
+  "./src/Assets/LandingPage/FirstSliderFirstPic.png",
+  "./src/Assets/LandingPage/FirstSliderFirstPic.png",
+  "./src/Assets/LandingPage/FirstSliderFirstPic.png",
+  "./src/Assets/LandingPage/FirstSliderFirstPic.png",
+  ]
+
+  export const secondSliderData=[
+    "./src/Assets/LandingPage/SecondSliderPic.png",
+    "./src/Assets/LandingPage/SecondSliderPic.png",
+    "./src/Assets/LandingPage/SecondSliderPic.png",
+    "./src/Assets/LandingPage/SecondSliderPic.png",
+    "./src/Assets/LandingPage/SecondSliderPic.png",
+    
+  ]
+  
+    
