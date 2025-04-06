@@ -1,16 +1,16 @@
-.showCaseContainer {
+.ShowCaseContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 70px;
 
-  .productsContainer {
+  .ProductsContainer {
     display: flex;
     flex-direction: row;
     gap: 44px;
   }
 
-  .subheading {
+  .SubHeading {
     color: #000;
     text-align: center;
     font-family: Poppins;
@@ -19,13 +19,5 @@
     font-weight: 400;
     line-height: normal;
   }
-  
-  .button {
-    display: flex;
-    padding: 11.945px 23.89px;
-    justify-content: center;
-    align-items: center;
-    gap: 7.466px;
-    border-radius: 90px;
-  }
+
 }

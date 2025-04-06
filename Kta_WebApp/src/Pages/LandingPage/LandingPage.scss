@@ -25,18 +25,18 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
-    p {
-      text-align: center;
-      font-family: Manrope;
-      font-size: 3rem;
-      font-style: normal;
-      font-weight: 800;
-      line-height: 125.025%; /* 295.737px */
-      background: black;
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+  p {
+    text-align: center;
+    font-family: Manrope;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 125.025%; /* 295.737px */
+    background: black;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .LandingLineSubHeadding {
@@ -98,7 +98,7 @@
 }
 .bannerPodium {
   width: 60%;
-  height: 25vh;
+  height: 20vh;
   flex-shrink: 0;
   border-radius: 60%;
   background: linear-gradient(180deg, #898989 -76.06%, #fafafa 51.66%);
