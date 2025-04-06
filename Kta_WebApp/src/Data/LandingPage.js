@@ -68,3 +68,27 @@ export const testimonialData = [
     designation: "CEO Universal",
   },
 ];
+
+export const featureData = [
+  {
+    img: "./src/Assets/LandingPage/lightBulbIcon.svg",
+    title: "Expertise & Innovation",
+    description:
+      "Years of experience in material science and surface technology.",
+  },
+  {
+    img: "./src/Assets/LandingPage/qualityIcon.svg",
+    title: "High-Quality Materials",
+    description: " Our products are engineered to meet global standards.",
+  },
+  {
+    img: "./src/Assets/LandingPage/environmentIcon.svg",
+    title: "Sustainability Commitment",
+    description: "Eco-friendly solutions with minimal environmental impact.",
+  },
+  {
+    img: "./src/Assets/LandingPage/customerIcon.svg",
+    title: "Customer Support",
+    description: "Dedicated professionals guiding you at every step.",
+  },
+];
