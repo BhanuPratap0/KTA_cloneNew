@@ -1,4 +1,4 @@
-.featureSection {
+.FeatureSection {
   display: flex;
   padding: 40px 50px;
   flex-direction: row;
@@ -7,20 +7,20 @@
   gap: 70px;
   margin: 80px 60px;
 
-  .leftSection {
+  .LeftSection {
     flex: 1;
     display: flex;
     align-items: start;
     flex-direction: column;
-    .text {
+    .Text {
       margin-top: 16px;
       margin-bottom: 35px;
     }
-    .headings {
+    .Headings {
       display: flex;
       flex-direction: column;
       gap: 10px;
-      .heading {
+      .Heading {
         font-family: Manrope;
         font-size: 16px;
         font-weight: 800;
@@ -33,7 +33,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-      .subHeading {
+      .SubHeading {
         width: 370px;
         color: #000;
         font-family: Manrope;
@@ -45,14 +45,14 @@
     }
   }
 
-  .rightSection {
+  .RightSection {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
     justify-content: space-evenly;
 
-    .featureCard {
+    .FeatureCard {
       display: flex;
       width: 216px;
       height: 154px;
@@ -61,12 +61,12 @@
       align-items: center;
       gap: 5px;
 
-      .title {
+      .Title {
         font-family: Poppins;
         font-size: 12px;
         font-weight: 600;
       }
-      .description {
+      .Description {
         color: #3e3e3e;
         text-align: center;
         font-family: Poppins;

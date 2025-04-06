@@ -1,12 +1,12 @@
-import React from 'react'
-import './HeadingComp.scss'
-const HeadingComp = ({heading, subHeading}) => {
+import React from "react";
+import styles from "./HeadingComp.module.scss";
+const HeadingComp = ({ heading, subHeading }) => {
   return (
-    <div className='headingClass'>
-        <p>{subHeading}</p>
-        {heading}
+    <div className={styles.HeadingClass}>
+      <p>{subHeading}</p>
+      {heading}
     </div>
-  )
-}
+  );
+};
 
-export default HeadingComp
+export default HeadingComp;

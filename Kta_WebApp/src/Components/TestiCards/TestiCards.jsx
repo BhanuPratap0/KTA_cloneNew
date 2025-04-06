@@ -1,19 +1,19 @@
 import React from "react";
-import "./TestiCards.scss";
+import styles from "./TestiCards.module.scss";
 
 const TestiCards = ({ data }) => {
   return (
-    <div className="testiCard">
-      <img className="quotationPic" src="./quotation.svg" alt="" />
+    <div className={styles.TestiCard}>
+      <img className={styles.QuotationPic} src="./quotation.svg" alt="" />
 
-      <div className="cardDiv">
-        <div className="firstSection">
-          <img className="stars" src="./stars.svg" alt="" />
-          <p className="comment">{data.comment}</p>
+      <div className={styles.CardDiv}>
+        <div className={styles.FirstSection}>
+          <img className={styles.Stars} src="./stars.svg" alt="" />
+          <p className={styles.Comment}>{data.comment}</p>
         </div>
-        <div className="testiInfo">
-          <img src={data.profilePic} alt="Testimonial Profile Picture" />
-          <div className="testiName">
+        <div className={styles.TestiInfo}>
+          <img src={data.ProfilePic} alt="Testimonial Profile Picture" />
+          <div className={styles.TestiName}>
             <p>{data.name}</p>
             <p>{data.designation}</p>
           </div>

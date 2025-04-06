@@ -1,11 +1,11 @@
-.productContainer {
+.ProductContainer {
   width: 220px;
   height: 350px;
   display: flex;
   flex-direction: column;
   font-family: Poppins;
 
-  .productImg {
+  .ProductImg {
     height: 265px;
     border-radius: 24px;
     margin-bottom: 24px;
@@ -23,7 +23,7 @@
     }
   }
 
-  .title {
+  .Title {
     color: #000;
     font-size: 12.757px;
     font-style: normal;
@@ -32,7 +32,7 @@
     margin-bottom: 8px;
   }
 
-  .description {
+  .Description {
     color: #3e3e3e;
     font-size: 10.934px;
     font-style: normal;

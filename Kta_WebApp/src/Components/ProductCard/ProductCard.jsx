@@ -1,13 +1,13 @@
 import React from "react";
-import "./ProductCard.scss";
+import styles from "./ProductCard.module.scss";
 const ProductCard = ({ data }) => {
   return (
-    <div className="productContainer">
-      <div className="productImg">
+    <div className={styles.ProductContainer}>
+      <div className={styles.ProductImg}>
         <img src={data.img} alt="ProductImg" />
       </div>
-      <div className="title">{data.title}</div>
-      <div className="description">{data.description}</div>
+      <div className={styles.Title}>{data.title}</div>
+      <div className={styles.Description}>{data.description}</div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useRef, useState } from "react";
 import HeadingComp from "../../../Components/HeadingComp/HeadingComp";
-import "./Testimonials.scss";
+import styles from "./Testimonials.module.scss";
 import TestiCards from "../../../Components/TestiCards/TestiCards";
 import { testimonialData } from "@/Data/LandingPage";
 
@@ -44,23 +44,29 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="testimonials">
-      <div className="headingSection">
+    <div className={styles.Testimonials}>
+      <div className={styles.HeadingSection}>
         <HeadingComp
           subHeading={"Testimonials"}
           heading={"What Our Happy User Says"}
         />
       </div>
-      <div className="testiCardsWrapper">
-        <button className="scrollButton left" onClick={scrollLeft}>
+      <div className={styles.TestiCardsWrapper}>
+        <button
+          className={`${styles.ScrollButton} ${styles.Left}`}
+          onClick={scrollLeft}
+        >
           {canScrollLeft && <img src="./left-arrow.svg" alt="" />}
         </button>
-        <div className="testiCards" ref={testiCardsRef}>
+        <div className={styles.TestiCards} ref={testiCardsRef}>
           {testimonialData.map((item, index) => (
             <TestiCards key={index} data={item} />
           ))}
         </div>
-        <button className="scrollButton right" onClick={scrollRight}>
+        <button
+          className={`${styles.ScrollButton} ${styles.Right}`}
+          onClick={scrollRight}
+        >
           {canScrollRight && <img src="./right-arrow.svg" alt="" />}
         </button>
       </div>

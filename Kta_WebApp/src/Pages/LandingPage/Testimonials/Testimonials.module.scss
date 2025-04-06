@@ -1,4 +1,4 @@
-.testimonials {
+.Testimonials {
   background-color: #fafafa;
   display: flex;
   flex-direction: column;
@@ -6,12 +6,12 @@
   margin-top: 100px;
 }
 
-.headingSection {
+.HeadingSection {
   width: 400px !important;
   align-self: center;
 }
 
-.testiCardsWrapper {
+.TestiCardsWrapper {
   display: flex;
   align-items: center; /* Vertically center buttons with the cards */
   justify-content: center;
@@ -19,7 +19,7 @@
   width: 100%;
 }
 
-.testiCards {
+.TestiCards {
   width: 100vw;
   overflow-x: scroll;
   padding: 0 40px 0 40px;
@@ -27,12 +27,12 @@
   gap: 30px;
 }
 
-.testiCards::-webkit-scrollbar {
+.TestiCards::-webkit-scrollbar {
   display: none;
 }
 
 /* Scroll button styles */
-.scrollButton {
+.ScrollButton {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -49,11 +49,9 @@
     height: 40px;
   }
 }
-
-.scrollButton.left {
+.Left {
   left: 10px;
 }
-
-.scrollButton.right {
+.Right {
   right: 10px;
 }
