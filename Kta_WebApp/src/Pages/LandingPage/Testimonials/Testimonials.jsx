@@ -56,7 +56,9 @@ const Testimonials = () => {
           className={`${styles.ScrollButton} ${styles.Left}`}
           onClick={scrollLeft}
         >
-          {canScrollLeft && <img src="./left-arrow.svg" alt="" />}
+          {canScrollLeft && (
+            <img src="./src/Assets/LandingPage/left-arrow.svg" alt="" />
+          )}
         </button>
         <div className={styles.TestiCards} ref={testiCardsRef}>
           {testimonialData.map((item, index) => (
@@ -67,7 +69,9 @@ const Testimonials = () => {
           className={`${styles.ScrollButton} ${styles.Right}`}
           onClick={scrollRight}
         >
-          {canScrollRight && <img src="./right-arrow.svg" alt="" />}
+          {canScrollRight && (
+            <img src="./src/Assets/LandingPage/right-arrow.svg" alt="" />
+          )}
         </button>
       </div>
     </div>

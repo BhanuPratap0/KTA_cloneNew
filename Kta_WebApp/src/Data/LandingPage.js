@@ -35,35 +35,35 @@ export const testimonialData = [
   {
     comment:
       "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-    profilePic: "./FirstSliderFirstPic.png",
+    profilePic: "./src/Assets/LandingPage/FirstSliderFirstPic.png",
     name: "Serhiy Hipskyy",
     designation: "CEO Universal",
   },
   {
     comment:
       "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-    profilePic: "./FirstSliderFirstPic.png",
+    profilePic: "./src/Assets/LandingPage/FirstSliderFirstPic.png",
     name: "Serhiy Hipskyy",
     designation: "CEO Universal",
   },
   {
     comment:
       "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-    profilePic: "./FirstSliderFirstPic.png",
+    profilePic: "./src/Assets/LandingPage/FirstSliderFirstPic.png",
     name: "Serhiy Hipskyy",
     designation: "CEO Universal",
   },
   {
     comment:
       "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-    profilePic: "./FirstSliderFirstPic.png",
+    profilePic: "./src/Assets/LandingPage/FirstSliderFirstPic.png",
     name: "Serhiy Hipskyy",
     designation: "CEO Universal",
   },
   {
     comment:
       "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-    profilePic: "./FirstSliderFirstPic.png",
+    profilePic: "./src/Assets/LandingPage/FirstSliderFirstPic.png",
     name: "Serhiy Hipskyy",
     designation: "CEO Universal",
   },
@@ -93,20 +93,17 @@ export const featureData = [
   },
 ];
 
-export const firstSliderData=[
+export const firstSliderData = [
   "./src/Assets/LandingPage/FirstSliderFirstPic.png",
   "./src/Assets/LandingPage/FirstSliderFirstPic.png",
   "./src/Assets/LandingPage/FirstSliderFirstPic.png",
   "./src/Assets/LandingPage/FirstSliderFirstPic.png",
-  ]
+];
 
-  export const secondSliderData=[
-    "./src/Assets/LandingPage/SecondSliderPic.png",
-    "./src/Assets/LandingPage/SecondSliderPic.png",
-    "./src/Assets/LandingPage/SecondSliderPic.png",
-    "./src/Assets/LandingPage/SecondSliderPic.png",
-    "./src/Assets/LandingPage/SecondSliderPic.png",
-    
-  ]
-  
-    
+export const secondSliderData = [
+  "./src/Assets/LandingPage/SecondSliderPic.png",
+  "./src/Assets/LandingPage/SecondSliderPic.png",
+  "./src/Assets/LandingPage/SecondSliderPic.png",
+  "./src/Assets/LandingPage/SecondSliderPic.png",
+  "./src/Assets/LandingPage/SecondSliderPic.png",
+];
