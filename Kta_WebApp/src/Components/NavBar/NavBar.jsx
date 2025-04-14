@@ -11,7 +11,11 @@ function NavBar() {
     <Navbar expand="lg" className="bg-body-white px-4">
       <Container fluid>
         <Navbar.Brand href="#">
-          <img src="public/KtaIcon.png" width={"100"} alt="KTA" />
+          <img
+            src="./src/Assets/LandingPage/KtaIcon.png"
+            width={"100"}
+            alt="KTA"
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">

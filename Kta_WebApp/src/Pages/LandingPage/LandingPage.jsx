@@ -9,6 +9,7 @@ import FeatureSection from "./FeatureSection/FeatureSection";
 import FadeSlider from "@/Components/Slider/FadeSlider";
 import SecondFadeSlider from "@/Components/Slider/SecondFadeSlider";
 import styles from "./LandingPage.module.scss";
+import FooterSection from "./FooterSection/FooterSection";
 function LandingPage() {
   return (
     <Container className={styles.Container}>
@@ -20,6 +21,7 @@ function LandingPage() {
       <Testimonials />
       <FeatureSection />
       <SecondFadeSlider />
+      <FooterSection />
     </Container>
   );
 }
