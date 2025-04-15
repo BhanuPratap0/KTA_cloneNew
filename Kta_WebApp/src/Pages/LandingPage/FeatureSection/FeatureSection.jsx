@@ -26,6 +26,7 @@ const FeatureSection = () => {
           );
         })}
       </div>
+      <div className={styles.LeftSectionRectangle}></div>
     </div>
   );
 };

@@ -16,10 +16,10 @@ function LandingPage() {
       <ContactNav />
       <NavBar />
       <HeroSection />
-      <FadeSlider />
       <ShowCaseSection />
-      <Testimonials />
+      <FadeSlider />
       <FeatureSection />
+      <Testimonials />
       <SecondFadeSlider />
       <FooterSection />
     </Container>

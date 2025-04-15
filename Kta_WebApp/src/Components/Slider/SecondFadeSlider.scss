@@ -8,6 +8,8 @@
     background-size: cover;
     position: relative;
     bottom: 380px;
+    width: 100vw;
+    overflow: hidden;
   }
 }
 .slider-container {
@@ -71,6 +73,34 @@
     linear-gradient(100deg, #e31e24 7.47%, #262065 92.53%)
   );
   transition: all 0.5s ease-in-out; /* Ensures smooth transition in and out */
+}
+.slick-dots {
+  position: absolute;
+  bottom: 272px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  color: white;
+  transform: rotate(90deg);
+  right: -619px;
+  z-index: 500;
+}
 
- 
+.slick-dots li button:before {
+  font-size: 8px; /* Adjust size if needed */
+  color: rgba(255, 255, 255, 0.28); /* Default dot color */
+  opacity: 1; /* Less prominent when not active */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #e31e24; /* Active dot color (e.g., Facebook blue) */
+  opacity: 1; /* Fully visible */
+}
+
+.slick-dots li {
+  margin: 0 0px; /* Reduce this value to control spacing, or use 0 for no gap */
+  padding: 0;
 }
