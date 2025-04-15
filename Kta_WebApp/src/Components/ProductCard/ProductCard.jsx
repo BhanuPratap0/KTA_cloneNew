@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ProductCard.module.scss";
+import styles from "./productCard.module.scss";
 const ProductCard = ({ data }) => {
   return (
     <div className={styles.ProductContainer}>
