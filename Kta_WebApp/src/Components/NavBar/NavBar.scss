@@ -1,73 +1,52 @@
+
 input[type="search"] {
-  -webkit-appearance: textfield;
-  -webkit-box-sizing: content-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   font-family: inherit;
-  font-size: 100%;
-}
-
-input::-webkit-search-decoration,
-input::-webkit-search-cancel-button {
-  display: none;
-}
-
-input[type="search"] {
-  background: #ededed
-    url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat
-    12px center;
-  border: solid 1px #ccc;
-
-  -webkit-border-radius: 10em;
-  -moz-border-radius: 10em;
-  border-radius: 10em;
-
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-
-  /* Align to the right initially */
-  // position: relative;
-  // right: 0;
+  font-size: 14px;
+  background: #ededed;
+  border: 0.88px solid #e8e8e8;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+  padding: 0;
+  width: 45px;
+  height: 45px;
+  padding-left: 0;
+  color: transparent;
+  background-image: url('../../Assets/LandingPage/searchIcon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45px 45px;
+  cursor: pointer;
+  outline: none;
 }
 
 #demo-2 {
   display: flex;
-  justify-content: flex-end; /* Align to the right */
+  justify-content: flex-end;
+  padding: 10px;
 }
 
-#demo-2 input[type="search"] {
-  display: flex;
-  width: 45px;
-  height: 45px;
-  justify-content: center;
-  align-items: center;
-  gap: 4.632px;
-  border: 1px solid #e8e8e8;
-
-  color: transparent;
-  cursor: pointer;
-
-  /* Align to the right */
-  text-align: left;
-  // transform: translateX(40px);
+input[type="search"]:hover {
+  background-color: #ededed;
 }
 
-#demo-2 input[type="search"]:hover {
-  background-color: #fff;
-}
-
-#demo-2 input[type="search"]:focus {
-  width: 200px; /* Expand width */
-  padding-left: 32px;
+input[type="search"]:focus {
+  width: 260px;
+  padding-left: 40px;
   color: #000;
-  background-color: #fff;
+  background-color: #ededed;
+  background-position:0px center;
   cursor: auto;
 }
 
-#demo-2 input:-moz-placeholder {
-  color: transparent;
+input[type="search"]::placeholder {
+  color: #999;
+  transition: color 0.3s ease;
 }
 
-#demo-2 input::-webkit-input-placeholder {
+input[type="search"]:not(:focus)::placeholder {
   color: transparent;
 }
 
@@ -84,36 +63,50 @@ input[type="search"] {
   margin-right: 1rem;
 }
 
+
 .contactButton {
+  position: relative;
   display: inline-flex;
   padding: 11.945px 23.89px;
   justify-content: center;
   align-items: center;
-  gap: 0.4rem;
-  border-radius: 5.72rem;
-  background: #e31e24; /* Original background color */
-  color: #fff !important;
-  font-family: Poppins;
-  font-size: 0.69rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  border-radius: 91.52px;
+  background: transparent;
+  overflow: hidden;
+  z-index: 0;
+  transition: color 0.3s ease;
+  display: flex;
+  border-radius: 432.968px;
+  cursor: pointer;
+  color: white !important;
+  background: #E31E24;
+  font-size: 0.8rem !important;
+  width: 100px; /* or any fixed size */
   margin-right: 1rem;
-  width: 100px;
+}
 
-  /* Transition all relevant properties including background */
-  transition: 
-    background 0.6s ease-in-out, 
-    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), 
-    box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  
-  transform: scale(1); /* default scale */
+
+
+.contactButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--brand, linear-gradient(100deg, #E31E24 7.47%, #262065 92.53%));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+  border-radius: 91.52px;
+}
+
+.contactButton:hover::before {
+  opacity: 1;
 }
 
 .contactButton:hover {
-  /* Change to gradient background on hover */
-  background: linear-gradient(100deg, #E31E24 7.47%, #262065 92.53%);
-  transform: scale(1.07); /* Slightly larger scale */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); /* Soft shadow */
+  color: white !important;
 }
-  
+
+

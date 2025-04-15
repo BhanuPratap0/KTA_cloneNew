@@ -68,13 +68,14 @@ function NavBar() {
               CAREERS
             </Nav.Link>
             <Nav.Link href="#action2" className="contactButton">
-              CONTACT
+              Contact
             </Nav.Link>
           </Nav>
 
-          <form id="demo-2">
-            <input type="search" placeholder="Search" />
-          </form>
+          <div id="demo-2">
+            <input type="search" placeholder="Product Search..." />
+          </div>
+
         </Navbar.Collapse>
       </Container>
     </Navbar>

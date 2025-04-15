@@ -6,6 +6,19 @@ import { MdMailOutline } from "react-icons/md";
 const FooterSection = () => {
   return (
     <div className={styles.FooterSection}>
+       <div className={styles.RightTopSection}>
+
+<div>
+  <img src="./src/Assets/LandingPage/PlatFacebook.svg" />
+</div>
+<div>
+  <img src="./src/Assets/LandingPage/PlatInstagram.svg" alt="" />
+</div>
+<div>
+  <img src="./src/Assets/LandingPage/PlatWhatsapp.svg" alt="" />
+</div>
+
+</div>
       <div className={styles.LeftSection}>
         <div className={styles.Logo}>
           <img src="./src/Assets/LandingPage/KtaIcon.png" alt="" />
@@ -66,17 +79,7 @@ const FooterSection = () => {
           </span>
         </div>
       </div>
-      <div className={styles.RightTopSection}>
-        <div className={styles.ellipse}>
-          <img src="./src/Assets/LandingPage/facebookIcon.svg" />
-        </div>
-        <div className={styles.ellipse}>
-          <img src="./src/Assets/LandingPage/instagramIcon.svg" alt="" />
-        </div>
-        <div className={styles.ellipse}>
-          <img src="./src/Assets/LandingPage/whatsappIcon.svg" alt="" />
-        </div>
-      </div>
+     
     </div>
   );
 };
