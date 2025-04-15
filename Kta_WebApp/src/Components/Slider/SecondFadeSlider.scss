@@ -1,6 +1,6 @@
 .sliderImg {
   overflow: hidden;
-  height: 530px;
+  height: 450px;
   position: relative;
 
   img {
@@ -55,26 +55,57 @@
   }
 }
 ////iske jagha gradient button laga ke border color white karna hai ///
+
+
+
 .outline-button {
-  display: flex;
-  padding: 11px 23px;
+  position: relative;
+  display: inline-flex;
+  padding: 11.945px 23.89px;
   justify-content: center;
   align-items: center;
-  gap: 7px;
-  border-radius: 91px;
-  border: 1px solid #fff;
-  color: white;
+  border-radius: 432.968px; /* Keep this if you prefer it larger */
+  border: 1px solid #ffffff;
+  background: transparent;
+  overflow: hidden;
+  z-index: 0;
   cursor: pointer;
+  color: white;
+  transition: color 0.3s ease, border 0.3s ease;
+}
+
+.outline-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(
+    --brand,
+    linear-gradient(100deg, #E31E24 7.47%, #262065 92.53%)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+  border-radius: inherit;
+}
+
+.outline-button:hover::before {
+  opacity: 1;
 }
 
 .outline-button:hover {
-  border: transparent;
-  background: var(
-    --brand,
-    linear-gradient(100deg, #e31e24 7.47%, #262065 92.53%)
-  );
-  transition: all 0.5s ease-in-out; /* Ensures smooth transition in and out */
+  color: white;
+  border-color: transparent;
 }
+
+
+
+
+
+
+
 .slick-dots {
   position: absolute;
   bottom: 272px;

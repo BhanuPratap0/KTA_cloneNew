@@ -18,7 +18,6 @@ const HeroSection = () => {
         </p>
       </div>
       <GradientButton text={"Explore Our Products"} />
-
       <div className={styles.LandingEnding}>
         <div className="redGradient"></div>
         <img
