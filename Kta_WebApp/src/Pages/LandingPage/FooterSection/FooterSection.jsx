@@ -65,6 +65,11 @@ const FooterSection = () => {
           </span>
         </div>
       </div>
+      <div className={styles.RightTopSection}>
+        <div className={styles.ellipse} ><img src="./src/Assets/LandingPage/facebookIcon.svg" /></div>
+        <div className={styles.ellipse} ><img src="./src/Assets/LandingPage/instagramIcon.svg" alt="" /></div>
+        <div className={styles.ellipse} ><img src="./src/Assets/LandingPage/whatsappIcon.svg" alt="" /></div>
+      </div>
     </div>
   );
 };

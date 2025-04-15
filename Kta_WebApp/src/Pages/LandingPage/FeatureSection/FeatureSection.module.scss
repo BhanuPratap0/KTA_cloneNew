@@ -6,12 +6,14 @@
   justify-content: center;
   gap: 70px;
   margin: 80px 60px;
+  position:relative;
 
   .LeftSection {
     flex: 1;
     display: flex;
     align-items: start;
     flex-direction: column;
+    margin-left: 80px;
     .Text {
       margin-top: 16px;
       margin-bottom: 35px;
@@ -74,5 +76,16 @@
         font-weight: 400;
       }
     }
+  }
+
+  .LeftSectionRectangle {
+    width: 177.772px;
+    height: 178px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -165px;
+    top: 61px;
+    border-radius: 27px;
+    background: linear-gradient(103deg, #e31e24 39.64%, #262065 83.65%);
   }
 }

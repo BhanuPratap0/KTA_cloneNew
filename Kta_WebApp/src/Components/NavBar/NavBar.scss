@@ -85,13 +85,13 @@ input[type="search"] {
 }
 
 .contactButton {
-  display: flex;
+  display: inline-flex;
   padding: 11.945px 23.89px;
   justify-content: center;
   align-items: center;
   gap: 0.4rem;
   border-radius: 5.72rem;
-  background: #e31e24;
+  background: #e31e24; /* Original background color */
   color: #fff !important;
   font-family: Poppins;
   font-size: 0.69rem;
@@ -100,4 +100,20 @@ input[type="search"] {
   line-height: normal;
   margin-right: 1rem;
   width: 100px;
+
+  /* Transition all relevant properties including background */
+  transition: 
+    background 0.6s ease-in-out, 
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), 
+    box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  transform: scale(1); /* default scale */
 }
+
+.contactButton:hover {
+  /* Change to gradient background on hover */
+  background: linear-gradient(100deg, #E31E24 7.47%, #262065 92.53%);
+  transform: scale(1.07); /* Slightly larger scale */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); /* Soft shadow */
+}
+  

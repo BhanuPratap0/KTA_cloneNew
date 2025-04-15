@@ -11,14 +11,15 @@ function FadeSlider() {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    arrows: false
   };
   return (
     <div className="slider-container">
       <Slider {...settings}>
         {
           firstSliderData.map((data,index)=>(
-            <div className="sliderImg">
+            <div className="firstSliderImg">
               <img src={data} key={index} />
             </div>
           ))
