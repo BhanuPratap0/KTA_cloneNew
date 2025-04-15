@@ -18,6 +18,7 @@ const TestiCards = ({ data }) => {
           />
           <p className={styles.Comment}>{data.comment}</p>
         </div>
+        <div className={styles.Line}></div>
         <div className={styles.TestiInfo}>
           <img src={data.profilePic} alt="Testimonial Profile Picture" />
           <div className={styles.TestiName}>

@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./GradientButton.module.scss";
-const GradientButton = ({ text }) => {
+const GradientButton = ({ text, customStyles }) => {
   return (
-    <div className={styles.GradientButton}>
+    <div className={`${styles.GradientButton} ${customStyles}`}>
       <p>{text}</p>
     </div>
   );

@@ -1,7 +1,7 @@
 .TestiCard {
   position: relative;
   width: 383px;
-  height: 285px;
+  height: 310px;
   flex-shrink: 0;
   overflow: hidden;
   .QuotationPic {
@@ -9,12 +9,13 @@
     transform: translate(45%, 8%);
     z-index: 2;
   }
+
   .CardDiv {
-    height: 258px !important;
+    height: 265px !important;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
-    padding: 50px 20px 20px 20px;
+    border-radius: 16px;
+    padding: 60px 30px;
     margin-top: 40px;
     background-color: white;
     flex-shrink: 0;
@@ -75,4 +76,12 @@
       }
     }
   }
+}
+
+.Line {
+  width: 120%;
+  position: relative;
+  left: -10%;
+  border-top: 1px solid #eaeff3;
+  padding: 8px 0px;
 }

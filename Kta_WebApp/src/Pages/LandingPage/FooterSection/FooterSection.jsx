@@ -12,6 +12,7 @@ const FooterSection = () => {
         </div>
         <div className={styles.Copyright}>
           © Copyright KTA Solutions. All Rights Reserved Mfd. and Marketed by
+          <br />
           SOBHRAJ DEVELOPMENTS PVT. LTD.
         </div>
       </div>
@@ -66,9 +67,15 @@ const FooterSection = () => {
         </div>
       </div>
       <div className={styles.RightTopSection}>
-        <div className={styles.ellipse} ><img src="./src/Assets/LandingPage/facebookIcon.svg" /></div>
-        <div className={styles.ellipse} ><img src="./src/Assets/LandingPage/instagramIcon.svg" alt="" /></div>
-        <div className={styles.ellipse} ><img src="./src/Assets/LandingPage/whatsappIcon.svg" alt="" /></div>
+        <div className={styles.ellipse}>
+          <img src="./src/Assets/LandingPage/facebookIcon.svg" />
+        </div>
+        <div className={styles.ellipse}>
+          <img src="./src/Assets/LandingPage/instagramIcon.svg" alt="" />
+        </div>
+        <div className={styles.ellipse}>
+          <img src="./src/Assets/LandingPage/whatsappIcon.svg" alt="" />
+        </div>
       </div>
     </div>
   );

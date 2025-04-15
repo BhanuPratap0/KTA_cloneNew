@@ -57,13 +57,14 @@
 ////iske jagha gradient button laga ke border color white karna hai ///
 .outline-button {
   display: flex;
-  padding: 11.945px 23.89px;
+  padding: 11px 23px;
   justify-content: center;
   align-items: center;
-  gap: 7.466px;
-  border-radius: 91.52px;
+  gap: 7px;
+  border-radius: 91px;
   border: 1px solid #fff;
   color: white;
+  cursor: pointer;
 }
 
 .outline-button:hover {
