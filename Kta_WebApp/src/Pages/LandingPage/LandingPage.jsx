@@ -12,7 +12,7 @@ import styles from "./LandingPage.module.scss";
 import FooterSection from "./FooterSection/FooterSection";
 function LandingPage() {
   return (
-    <Container className={styles.Container}>
+    <div className={styles.Container}>
       <ContactNav />
       <NavBar />
       <HeroSection />
@@ -22,7 +22,7 @@ function LandingPage() {
       <Testimonials />
       <SecondFadeSlider />
       <FooterSection />
-    </Container>
+    </div>
   );
 }
 
