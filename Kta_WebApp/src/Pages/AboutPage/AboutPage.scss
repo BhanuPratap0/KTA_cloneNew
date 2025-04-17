@@ -1,0 +1,254 @@
+//heroBanner
+
+#heroBanner {
+  img {
+    width: 100%;
+  }
+}
+
+//outstory
+
+#ourStorySection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+
+  .ourStoryHeading {
+    color: #222;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Manrope;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125.025%;
+  }
+  .ourStoryDesc {
+    color: #222;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+//mission
+
+#mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  background-image: url(../../Assets/AboutPage/missionBanner.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  gap: 3rem;
+  .missionBlock {
+    width: 25%;
+    margin-right: 125px;
+
+    .missionHeading {
+      display: flex;
+      flex-direction: row;
+      color: #fff;
+      text-align: center;
+      align-items: center;
+      font-family: Manrope;
+      font-size: 35.2px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      gap: 1rem;
+      img {
+        margin-bottom: 14px;
+      }
+    }
+    .missionDesc {
+      color: #fff;
+      font-family: Poppins;
+      font-size: 15.4px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+//fixing solutions
+
+#fixingSolution {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 125px;
+  margin-bottom: 125px;
+}
+
+.fixingSolHeading {
+  color: #000;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 43.784px; /* 87.568% */
+  span {
+    background: linear-gradient(118deg, #e31e24 34.98%, #262065 65.54%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Manrope;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 43.784px;
+  }
+}
+
+.fixingSolCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.fixingSolCard {
+  display: flex;
+  width: 225px;
+  height: 255px;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 8px;
+  border: 0.5px solid #e31e24;
+  background: #f6f6f6;
+  box-shadow: 61px 60px 158.3px 0px rgba(0, 0, 0, 0.1);
+  img {
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  .fixingSolCardHeading {
+    color: #000;
+    font-family: Poppins;
+    font-size: 12.88px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .fixingSolCardDesc {
+    color: #3e3e3e;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 10.899px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+//movement
+
+#movement {
+
+  .movementHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .movementTopHeading {
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    background: var(
+      --brand,
+      linear-gradient(100deg, #e31e24 7.47%, #262065 92.53%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .movementHeading {
+    color: #000;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 64px; /* 128% */
+  }
+  .movementDesc {
+    color: #3e3e3e;
+    font-family: Poppins;
+    font-size: 14.4px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 3rem;
+  }
+
+  .outline-button {
+    align-self: center;
+    position: relative;
+    display: inline-flex;
+    padding: 11.945px 23.89px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 432.968px; /* Keep this if you prefer it larger */
+    border: 1px solid #000000;
+    background: transparent;
+    overflow: hidden;
+    z-index: 0;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease, border 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+
+  .outline-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(
+      --brand,
+      linear-gradient(100deg, #e31e24 7.47%, #262065 92.53%)
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+    border-radius: inherit;
+  }
+
+  .outline-button:hover::before {
+    opacity: 1;
+  }
+
+  .outline-button:hover {
+    color: white;
+    border-color: transparent;
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
