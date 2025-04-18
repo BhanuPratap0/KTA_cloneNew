@@ -23,10 +23,8 @@ function LandingPage() {
       <Testimonials />
       <SecondFadeSlider />
       <FooterSection />
-
       <br />
-
-      <AboutPage/>
+      <AboutPage />
     </div>
   );
 }

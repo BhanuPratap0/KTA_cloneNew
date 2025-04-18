@@ -1,9 +1,10 @@
+import MainRoutes from "./Mainroutes/Mainroutes";
 import LandingPage from "./Pages/LandingPage/LandingPage";
 
 function App() {
   return (
     <div>
-      <LandingPage />
+      <MainRoutes />
     </div>
   );
 }

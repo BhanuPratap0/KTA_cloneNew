@@ -1,31 +1,28 @@
 //heroBanner
 
-#heroBanner {
+#HeroBanner {
   img {
     width: 100%;
   }
 }
 
 //outstory
-
-#ourStorySection {
+#OurStorySection {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 10rem;
 
-  .ourStoryHeading {
+  OurStoryHeading {
     color: #222;
-    leading-trim: both;
-    text-edge: cap;
     font-family: Manrope;
     font-size: 56px;
     font-style: normal;
     font-weight: 600;
     line-height: 125.025%;
   }
-  .ourStoryDesc {
+  .OurStoryDesc {
     color: #222;
     font-family: Poppins;
     font-size: 16px;
@@ -37,7 +34,7 @@
 
 //mission
 
-#mission {
+#Mission {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -48,11 +45,11 @@
   padding-top: 75px;
   padding-bottom: 75px;
   gap: 3rem;
-  .missionBlock {
+  .MissionBlock {
     width: 25%;
     margin-right: 125px;
 
-    .missionHeading {
+    .MissionHeading {
       display: flex;
       flex-direction: row;
       color: #fff;
@@ -68,7 +65,7 @@
         margin-bottom: 14px;
       }
     }
-    .missionDesc {
+    .MissionDesc {
       color: #fff;
       font-family: Poppins;
       font-size: 15.4px;
@@ -81,7 +78,7 @@
 
 //fixing solutions
 
-#fixingSolution {
+#FixingSolution {
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -89,7 +86,7 @@
   margin-bottom: 125px;
 }
 
-.fixingSolHeading {
+.FixingSolHeading {
   color: #000;
   text-align: center;
   font-family: Manrope;
@@ -110,14 +107,14 @@
   }
 }
 
-.fixingSolCards {
+.FixingSolCards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
 }
-.fixingSolCard {
+.FixingSolCard {
   display: flex;
   width: 225px;
   height: 255px;
@@ -136,7 +133,7 @@
   p {
     margin-bottom: 0;
   }
-  .fixingSolCardHeading {
+  .FixingSolCardHeading {
     color: #000;
     font-family: Poppins;
     font-size: 12.88px;
@@ -144,7 +141,7 @@
     font-weight: 600;
     line-height: normal;
   }
-  .fixingSolCardDesc {
+  .FixingSolCardDesc {
     color: #3e3e3e;
     text-align: center;
     font-family: Poppins;
@@ -157,16 +154,15 @@
 
 //movement
 
-#movement {
-
-  .movementHeader {
+#Movement {
+  .MovementHeader {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .movementTopHeading {
+  .MovementTopHeading {
     text-align: center;
     font-family: Manrope;
     font-size: 16px;
@@ -183,7 +179,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .movementHeading {
+  .MovementHeading {
     color: #000;
     text-align: center;
     font-family: Manrope;
@@ -192,7 +188,7 @@
     font-weight: 800;
     line-height: 64px; /* 128% */
   }
-  .movementDesc {
+  .MovementDesc {
     color: #3e3e3e;
     font-family: Poppins;
     font-size: 14.4px;
@@ -202,7 +198,7 @@
     margin-bottom: 3rem;
   }
 
-  .outline-button {
+  .OutlineButton {
     align-self: center;
     position: relative;
     display: inline-flex;
@@ -221,7 +217,7 @@
     margin-bottom: 80px;
   }
 
-  .outline-button::before {
+  .OutlineButton::before {
     content: "";
     position: absolute;
     top: 0;
@@ -238,15 +234,15 @@
     border-radius: inherit;
   }
 
-  .outline-button:hover::before {
+  .OutlineButton:hover::before {
     opacity: 1;
   }
 
-  .outline-button:hover {
+  .OutlineButton:hover {
     color: white;
     border-color: transparent;
   }
-  .buttonContainer {
+  .ButtonContainer {
     display: flex;
     justify-content: center;
     align-items: center;

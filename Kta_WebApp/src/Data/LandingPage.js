@@ -93,6 +93,7 @@ export const featureData = [
   },
 ];
 
+
 export const firstSliderData = [
   "./src/Assets/LandingPage/FirstSliderFirstPic.png",
   "./src/Assets/LandingPage/FirstSliderSecondPic.png",
