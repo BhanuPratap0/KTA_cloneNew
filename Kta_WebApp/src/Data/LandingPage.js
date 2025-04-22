@@ -1,3 +1,5 @@
+import secondSliderImg from "@/Assets/LandingPage/SecondSliderPic.png";
+import firstSliderImg from "@/Assets/LandingPage/FirstSliderFirstPic.png";
 export const ProductList = [
   {
     img: "./src/Assets/LandingPage/ceremic solutions.svg",
@@ -28,21 +30,21 @@ export const testimonialData = [
   {
     comment:
       "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-    profilePic: "./src/Assets/LandingPage/FirstSliderFirstPic.png",
+    profilePic: firstSliderImg,
     name: "Serhiy Hipskyy",
     designation: "CEO Universal",
   },
   {
     comment:
       "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-    profilePic: "./src/Assets/LandingPage/FirstSliderFirstPic.png",
+    profilePic: firstSliderImg,
     name: "Serhiy Hipskyy",
     designation: "CEO Universal",
   },
   {
     comment:
       "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-    profilePic: "./src/Assets/LandingPage/FirstSliderFirstPic.png",
+    profilePic: firstSliderImg,
     name: "Serhiy Hipskyy",
     designation: "CEO Universal",
   },
@@ -93,7 +95,6 @@ export const featureData = [
   },
 ];
 
-
 export const firstSliderData = [
   "./src/Assets/LandingPage/FirstSliderFirstPic.png",
   "./src/Assets/LandingPage/FirstSliderSecondPic.png",
@@ -101,9 +102,9 @@ export const firstSliderData = [
 ];
 
 export const secondSliderData = [
-  "./src/Assets/LandingPage/SecondSliderPic.png",
-  "./src/Assets/LandingPage/SecondSliderPic.png",
-  "./src/Assets/LandingPage/SecondSliderPic.png",
-  "./src/Assets/LandingPage/SecondSliderPic.png",
-  "./src/Assets/LandingPage/SecondSliderPic.png",
+  secondSliderImg,
+  secondSliderImg,
+  secondSliderImg,
+  secondSliderImg,
+  secondSliderImg,
 ];

@@ -1,17 +1,16 @@
-import ContactNav from "@/Components/ContactNav/ContactNav";
-import NavBar from "@/Components/NavBar/NavBar";
 import React from "react";
 import styles from "./AboutPage.module.scss";
 import CenterSlider from "@/Components/Slider/CenterSlider";
-import SecondFadeSlider from "@/Components/Slider/SecondFadeSlider";
-import FooterSection from "../LandingPage/FooterSection/FooterSection";
 import { fixingSolutionCardsData } from "@/Data/AboutPage";
-
+import heroBanner from "@/Assets/AboutPage/HeroBanner.png";
+import ourStoryPropImg from "@/Assets/AboutPage/ourStoryProp.png";
+import missionSvg from "@/Assets/AboutPage/missionSVG.svg";
+import visionSvg from "@/Assets/AboutPage/visionSVG.svg";
 function AboutPage() {
   return (
     <div>
       <div id={styles.HeroBanner}>
-        <img src="./src/Assets/AboutPage/heroBanner.png" alt="" />
+        <img src={heroBanner} alt="hero banner" />
       </div>
 
       <div id={styles.OurStorySection} className={styles.Container}>
@@ -25,14 +24,14 @@ function AboutPage() {
           </p>
         </div>
         <div>
-          <img src="./src/Assets/AboutPage/ourStoryProp.png" alt="" />
+          <img src={ourStoryPropImg} alt="" />
         </div>
       </div>
 
       <div id={styles.Mission}>
         <div className={styles.MissionBlock}>
           <div className={styles.MissionHeading}>
-            <img src="./src/Assets/AboutPage/missionSVG.svg" alt="" />
+            <img src={missionSvg} alt="" />
             <p>Mission</p>
           </div>
           <p className={styles.MissionDesc}>
@@ -44,7 +43,7 @@ function AboutPage() {
 
         <div className={styles.MissionBlock}>
           <div className={styles.MissionHeading}>
-            <img src="./src/Assets/AboutPage/visionSVG.svg" alt="" />
+            <img src={visionSvg} alt="" />
             <p>Vision</p>
           </div>
           <p className={styles.MissionDesc}>
