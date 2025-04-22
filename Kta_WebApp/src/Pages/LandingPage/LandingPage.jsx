@@ -11,6 +11,8 @@ import SecondFadeSlider from "@/Components/Slider/SecondFadeSlider";
 import styles from "./LandingPage.module.scss";
 import FooterSection from "./FooterSection/FooterSection";
 import AboutPage from "../AboutPage/AboutPage";
+import Products from "../Products/Products";
+import ProductWindow from "../Products/ProductWindow";
 function LandingPage() {
   return (
     <div className={styles.Container}>
@@ -23,8 +25,10 @@ function LandingPage() {
       <Testimonials />
       <SecondFadeSlider />
       <FooterSection />
-      <br />
-      <AboutPage />
+
+
+      <Products/>
+      <ProductWindow/>
     </div>
   );
 }
