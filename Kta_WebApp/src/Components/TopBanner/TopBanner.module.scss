@@ -1,0 +1,23 @@
+#TopBanner {
+  display: flex;
+  width: 95%;
+  height: 393.269px;
+  padding: 10%;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #191919;
+
+  .TopBannerHead {
+  }
+  .TopBannerDetails {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 40%;
+  }
+}
