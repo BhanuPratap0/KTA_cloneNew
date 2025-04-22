@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import ktaLogo from "@/Assets/LandingPage/ktaIcon.png";
 import "./NavBar.scss";
 
 function NavBar() {
@@ -11,11 +12,7 @@ function NavBar() {
     <Navbar expand="lg" className="bg-body-white px-4">
       <Container fluid>
         <Navbar.Brand href="#">
-          <img
-            src="./src/Assets/LandingPage/KtaIcon.png"
-            width={"100"}
-            alt="KTA"
-          />
+          <img src={ktaLogo} width={"100"} alt="KTA" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -75,7 +72,6 @@ function NavBar() {
           <div id="demo-2">
             <input type="search" placeholder="Product Search..." />
           </div>
-
         </Navbar.Collapse>
       </Container>
     </Navbar>
