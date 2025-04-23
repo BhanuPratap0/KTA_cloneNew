@@ -1,4 +1,5 @@
 import AboutPage from "@/Pages/AboutPage/AboutPage";
+import CareersPage from "@/Pages/CareersPage/CareersPage";
 import Products from "@/Pages/Products/Products";
 
 export const appRoutes = [
@@ -8,6 +9,10 @@ export const appRoutes = [
   },{
     path: "products",
     element:<Products/>
+  },
+  {
+    path: "careers",
+    element: <CareersPage/>
   }
 
 ];
