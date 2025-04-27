@@ -51,21 +51,21 @@ export const testimonialData = [
   {
     comment:
       "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-    profilePic: "./src/Assets/LandingPage/FirstSliderFirstPic.png",
+    profilePic: firstSliderImg,
     name: "Serhiy Hipskyy",
     designation: "CEO Universal",
   },
   {
     comment:
       "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-    profilePic: "./src/Assets/LandingPage/FirstSliderFirstPic.png",
+    profilePic: firstSliderImg,
     name: "Serhiy Hipskyy",
     designation: "CEO Universal",
   },
   {
     comment:
       "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-    profilePic: "./src/Assets/LandingPage/FirstSliderFirstPic.png",
+    profilePic: firstSliderImg,
     name: "Serhiy Hipskyy",
     designation: "CEO Universal",
   },
@@ -96,9 +96,9 @@ export const featureData = [
 ];
 
 export const firstSliderData = [
-  "./src/Assets/LandingPage/FirstSliderFirstPic.png",
-  "./src/Assets/LandingPage/FirstSliderSecondPic.png",
-  "./src/Assets/LandingPage/FirstSliderThirdPic.png",
+  firstSliderImg,
+  secondSliderImg,
+  firstSliderImg,
 ];
 
 export const secondSliderData = [

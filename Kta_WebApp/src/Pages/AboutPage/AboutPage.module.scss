@@ -1,5 +1,7 @@
 //heroBanner
-
+.Container {
+  padding: 100px;
+}
 #HeroBanner {
   img {
     width: 100%;
@@ -14,7 +16,7 @@
   align-items: center;
   gap: 10rem;
 
-  OurStoryHeading {
+  .OurStoryHeading {
     color: #222;
     font-family: Manrope;
     font-size: 56px;
