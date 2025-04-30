@@ -5,13 +5,16 @@ import {
   Route,
   Router,
   Routes,
+  useLocation,
 } from "react-router-dom";
 import { appRoutes } from "./AppRoutes";
 
 import AppLayout from "@/Layout/AppLayout";
 import LandingPage from "@/Pages/LandingPage/LandingPage";
 
+
 const MainRoutes = () => {
+
   return (
     <>
       <BrowserRouter>

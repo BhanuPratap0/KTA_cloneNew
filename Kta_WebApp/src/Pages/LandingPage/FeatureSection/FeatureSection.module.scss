@@ -3,8 +3,9 @@
   padding: 40px 50px;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 70px;
+  justify-content: space-between;
+  // gap: 70px;
+  flex-wrap: wrap;
   margin: 80px 60px;
   position: relative;
 
@@ -36,7 +37,7 @@
         -webkit-text-fill-color: transparent;
       }
       .SubHeading {
-        width: 370px;
+        // width: 370px;  
         color: #000;
         font-family: Manrope;
         font-size: 54px;
@@ -48,12 +49,11 @@
   }
 
   .RightSection {
-    flex: 1;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
     justify-content: space-evenly;
-
+    width: 60%;
     .FeatureCard {
       display: flex;
       width: 216px;
