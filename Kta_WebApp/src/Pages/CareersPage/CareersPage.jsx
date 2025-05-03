@@ -1,11 +1,11 @@
 import TopBanner from "@/Components/TopBanner/TopBanner";
 import React from "react";
 import styles from "./CareersPage.module.scss";
-
+import bannerImg from "@/Assets/CareersPage/CareersHeading.png";
 const CareersPage = () => {
   return (
     <div id={styles.Careers}>
-      <TopBanner details="Whether you're a contractor, architect, or homeowner, our easy-to-use calculators help you determine the right amount of product for your surface care needs." />
+      <TopBanner details="Whether you're a contractor, architect, or homeowner, our easy-to-use calculators help you determine the right amount of product for your surface care needs." head={bannerImg} />
 
       <div id={styles.headingDiv}>
         <div className={styles.heading}>

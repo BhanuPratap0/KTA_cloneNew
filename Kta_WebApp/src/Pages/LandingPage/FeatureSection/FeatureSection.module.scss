@@ -10,11 +10,11 @@
   position: relative;
 
   .LeftSection {
-    flex: 1;
     display: flex;
     align-items: start;
     flex-direction: column;
     margin-left: 80px;
+    
     .Text {
       margin-top: 16px;
       margin-bottom: 35px;
@@ -37,7 +37,7 @@
         -webkit-text-fill-color: transparent;
       }
       .SubHeading {
-        // width: 370px;  
+        width: 370px;
         color: #000;
         font-family: Manrope;
         font-size: 54px;
@@ -49,11 +49,11 @@
   }
 
   .RightSection {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid ;
+    grid-template-columns: repeat(2, 1fr); // 2 cards per row
     gap: 24px;
-    justify-content: space-evenly;
-    width: 60%;
+    justify-items: center;
+
     .FeatureCard {
       display: flex;
       width: 216px;
@@ -89,3 +89,7 @@
     background: linear-gradient(103deg, #e31e24 39.64%, #262065 83.65%);
   }
 }
+
+
+
+

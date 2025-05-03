@@ -23,7 +23,7 @@ function AboutPage() {
             results with reliability and efficiency.
           </p>
         </div>
-        <div>
+        <div className={styles.propDiv}>
           <img src={ourStoryPropImg} alt="" />
         </div>
       </div>

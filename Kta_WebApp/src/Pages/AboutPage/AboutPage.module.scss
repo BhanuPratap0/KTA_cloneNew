@@ -1,6 +1,12 @@
+$mobile: 768px;
+
 //heroBanner
 .Container {
   padding: 100px;
+
+  @media (max-width: $mobile) {
+    padding: 30px;
+  }
 }
 #HeroBanner {
   img {
@@ -15,7 +21,23 @@
   justify-content: space-between;
   align-items: center;
   gap: 10rem;
-
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .propDiv {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  img {
+    @media (max-width: $mobile) {
+      width: 60%;
+    }
+  }
   .OurStoryHeading {
     color: #222;
     font-family: Manrope;
@@ -23,7 +45,18 @@
     font-style: normal;
     font-weight: 600;
     line-height: 125.025%;
+
+    @media (max-width: $mobile) {
+      color: #000;
+      text-align: center;
+      font-family: Manrope;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 30.65px;
+    }
   }
+
   .OurStoryDesc {
     color: #222;
     font-family: Poppins;
@@ -31,6 +64,15 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    @media (max-width: $mobile) {
+      color: #000;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
   }
 }
 
@@ -47,9 +89,23 @@
   padding-top: 75px;
   padding-bottom: 75px;
   gap: 3rem;
+
+  @media (max-width: $mobile) {
+    background-image: url(../../Assets/AboutPage/missionBannerMob.png);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 2rem;
+  }
+
   .MissionBlock {
     width: 25%;
     margin-right: 125px;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      margin-right: 0;
+      text-align: center;
+    }
 
     .MissionHeading {
       display: flex;
@@ -63,8 +119,28 @@
       font-weight: 600;
       line-height: normal;
       gap: 1rem;
+
       img {
         margin-bottom: 14px;
+        @media (max-width: $mobile) {
+          margin-bottom: 0px;
+          transform: scale(0.8);
+        }
+      }
+
+      @media (max-width: $mobile) {
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        gap: 0.4rem;
+        p {
+          margin-bottom: 0px;
+        }
       }
     }
     .MissionDesc {
@@ -74,6 +150,17 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+
+      @media (max-width: $mobile) {
+        color: #fff;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-inline: 70px;
+      }
     }
   }
 }
@@ -84,8 +171,13 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  margin-top: 125px;
-  margin-bottom: 125px;
+  margin-left: -30px;
+  margin-right: -30px;
+  @media (max-width: $mobile) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 1rem;
+  }
 }
 
 .FixingSolHeading {
@@ -95,7 +187,7 @@
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
-  line-height: 43.784px; /* 87.568% */
+  line-height: 43.784px;
   span {
     background: linear-gradient(118deg, #e31e24 34.98%, #262065 65.54%);
     background-clip: text;
@@ -106,6 +198,29 @@
     font-style: normal;
     font-weight: 800;
     line-height: 43.784px;
+
+    @media (max-width: $mobile) {
+      background: linear-gradient(107deg, #e31e24 11.13%, #262065 44.13%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Manrope;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 32px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    color: #000;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px;
+    margin-inline: 70px;
   }
 }
 
@@ -115,6 +230,10 @@
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+
+  @media (max-width: $mobile) {
+    gap: 1.3rem;
+  }
 }
 .FixingSolCard {
   display: flex;
@@ -126,11 +245,14 @@
   align-items: center;
   gap: 6px;
   border-radius: 8px;
-  border: 0.5px solid #e31e24;
+  border: 0.5px solid #e31e2518;
   background: #f6f6f6;
-  box-shadow: 61px 60px 158.3px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 61px 60px 158.3px 0px rgba(0, 0, 0, 0.103);
   img {
     margin-bottom: 1rem;
+    @media (max-width: $mobile) {
+      transform: scale(0.8);
+    }
   }
   p {
     margin-bottom: 0;
@@ -142,6 +264,15 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    @media (max-width: $mobile) {
+      color: #000;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
   }
   .FixingSolCardDesc {
     color: #3e3e3e;
@@ -151,6 +282,26 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    @media (max-width: $mobile) {
+      color: #3e3e3e;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    display: flex;
+    width: 162.318px;
+    height: 183.96px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.289px;
   }
 }
 
@@ -189,6 +340,17 @@
     font-style: normal;
     font-weight: 800;
     line-height: 64px; /* 128% */
+
+    @media (max-width: $mobile) {
+      color: #000;
+      text-align: center;
+      font-family: Manrope;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 30.65px;
+      margin-bottom: 0px;
+    }
   }
   .MovementDesc {
     color: #3e3e3e;
@@ -198,6 +360,17 @@
     font-weight: 400;
     line-height: normal;
     margin-bottom: 3rem;
+
+    @media (max-width: $mobile) {
+      color: #3e3e3e;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-inline: 20px;
+    }
   }
 
   .OutlineButton {
@@ -217,6 +390,14 @@
     transition: color 0.3s ease, border 0.3s ease;
     margin-top: 20px;
     margin-bottom: 80px;
+
+    @media (max-width: $mobile) {
+      display: flex;
+      padding: 8.473px 16.946px;
+      justify-content: center;
+      align-items: center;
+      gap: 5.296px;
+    }
   }
 
   .OutlineButton::before {
