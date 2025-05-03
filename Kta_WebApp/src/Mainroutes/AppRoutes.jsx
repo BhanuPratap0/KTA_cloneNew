@@ -3,6 +3,7 @@ import CareersPage from "@/Pages/CareersPage/CareersPage";
 import CalculatorPage from "@/Pages/CalculatorPage/CalculatorPage";
 
 import Products from "@/Pages/Products/Products";
+import Downloads from "@/Pages/DownloadPage/Downloads";
 
 export const appRoutes = [
   {
@@ -20,5 +21,9 @@ export const appRoutes = [
   {
     path: "Calculator",
     element: <CalculatorPage />,
+  },
+  {
+    path: "Downloads",
+    element: <Downloads />,
   },
 ];
