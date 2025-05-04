@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import ktaLogo from "/Assets/LandingPage/KtaIcon.png";
 import "./NavBar.scss";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function NavBar() {
 
@@ -34,7 +34,7 @@ function NavBar() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link className="navLink" href="/about">
+            <Nav.Link className="navLink" as={Link} to="/about">
               ABOUT
             </Nav.Link>
 
@@ -43,12 +43,12 @@ function NavBar() {
               title="PRODUCTS"
               id={isAboutPage?"navbarScrollingDropdownWhite":"navbarScrollingDropdown"}
             >
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
+              <NavDropdown.Item as={Link} to="#action3">Action</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="#action4">
                 Another action
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
+              <NavDropdown.Item as={Link} to="#action5">
                 Something else here
               </NavDropdown.Item>
             </NavDropdown>
@@ -59,8 +59,8 @@ function NavBar() {
               
               id={isAboutPage?"navbarScrollingDropdownWhite":"navbarScrollingDropdown"}
             >
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
+              <NavDropdown.Item as={Link} to="#action3">Action</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="#action4">
                 Another action
               </NavDropdown.Item>
               <NavDropdown.Divider />
@@ -72,13 +72,13 @@ function NavBar() {
             <Nav.Link className={isAboutPage?"navLinkWhite":"navLink"} href="#action2">
               BLOG
             </Nav.Link>
-            <Nav.Link className="navLink" href="/calculator">
+            <Nav.Link className="navLink" as={Link} to="/calculator">
               CALCULATORS
             </Nav.Link>
-            <Nav.Link className="navLink" href="/careers">
+            <Nav.Link className="navLink" as={Link} to="/careers">
               CAREERS
             </Nav.Link>
-            <Nav.Link href="#action2" className="/contact">
+            <Nav.Link as={Link} to="#action2" className="/contact">
               Contact
             </Nav.Link>
           </Nav>
