@@ -6,10 +6,23 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import ktaLogo from "@/Assets/LandingPage/ktaIcon.png";
 import "./NavBar.scss";
+import { useLocation } from "react-router-dom";
 
 function NavBar() {
+
+
+
+  const location = useLocation();
+  const isAboutPage = location.pathname.includes("/app/about")
+  const aboutPageStyles = {
+    background: "transparent",
+    position: "absolute",
+    width: "100%"
+  }
+
+
   return (
-    <Navbar expand="lg" className="bg-body-white px-4">
+    <Navbar expand="lg" className="bg-body-white px-4" style={isAboutPage?aboutPageStyles:{} }>
       <Container fluid>
         <Navbar.Brand href="#">
           <img src={ktaLogo} width={"100"} alt="KTA" />
@@ -28,7 +41,7 @@ function NavBar() {
             <NavDropdown
               className="navLink"
               title="PRODUCTS"
-              id="navbarScrollingDropdown"
+              id={isAboutPage?"navbarScrollingDropdownWhite":"navbarScrollingDropdown"}
             >
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
@@ -43,7 +56,8 @@ function NavBar() {
             <NavDropdown
               className="navLink"
               title="DOWNLOADS"
-              id="navbarScrollingDropdown"
+              
+              id={isAboutPage?"navbarScrollingDropdownWhite":"navbarScrollingDropdown"}
             >
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
@@ -55,7 +69,7 @@ function NavBar() {
               </NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link className="navLink" href="#action2">
+            <Nav.Link className={isAboutPage?"navLinkWhite":"navLink"} href="#action2">
               BLOG
             </Nav.Link>
             <Nav.Link className="navLink" href="/app/calculator">

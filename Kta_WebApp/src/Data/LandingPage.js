@@ -97,7 +97,7 @@ export const featureData = [
 
 export const firstSliderData = [
   firstSliderImg,
-  secondSliderImg,
+  firstSliderImg,
   firstSliderImg,
 ];
 

@@ -23,7 +23,7 @@ function AboutPage() {
             results with reliability and efficiency.
           </p>
         </div>
-        <div>
+        <div className={styles.propDiv}>
           <img src={ourStoryPropImg} alt="" />
         </div>
       </div>
@@ -54,7 +54,7 @@ function AboutPage() {
         </div>
       </div>
 
-      <div id={styles.FixingSolution} className={styles.Container}>
+      <div id={styles.FixingSolution} >
         <p className={styles.FixingSolHeading}>
           A Complete<span> Fixing</span> Solution.
         </p>
