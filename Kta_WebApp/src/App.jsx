@@ -1,4 +1,4 @@
-import MainRoutes from "./Mainroutes/Mainroutes";
+import MainRoutes from "./Mainroutes/MainRoutes";
 import LandingPage from "./Pages/LandingPage/LandingPage";
 
 function App() {
