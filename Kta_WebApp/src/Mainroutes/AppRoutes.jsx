@@ -19,7 +19,7 @@ export const appRoutes = [
     element: <CareersPage/>
   },
   {
-    path: "Calculator",
+    path: "calculator",
     element: <CalculatorPage />,
   },
   {
