@@ -50,3 +50,7 @@
   left: 35%;
   top: 40%;
 }
+
+.slick-slide img{
+  width: 100%;
+}
