@@ -8,24 +8,24 @@ function ProductWindow() {
             <div id={styles.ProductWindow} >
                 <div className={styles.ProductImgList}>
                     <div>
-                        <img src="./public/Assets/ProductsPage/Product.png" alt="" />
+                    </div>
+                        <img src="/Assets/ProductsPage/Product.png" alt="" />
+                    <div>
+                        <img src="/Assets/ProductsPage/Product.png" alt="" />
                     </div>
                     <div>
-                        <img src="./public/Assets/ProductsPage/Product.png" alt="" />
+                        <img src="/Assets/ProductsPage/Product.png" alt="" />
                     </div>
                     <div>
-                        <img src="./public/Assets/ProductsPage/Product.png" alt="" />
+                        <img src="/Assets/ProductsPage/Product.png" alt="" />
                     </div>
                     <div>
-                        <img src="./public/Assets/ProductsPage/Product.png" alt="" />
-                    </div>
-                    <div>
-                        <img src="./public/Assets/ProductsPage/Product.png" alt="" />
+                        <img src="/Assets/ProductsPage/Product.png" alt="" />
                     </div>
                 </div>
 
                 <div className={styles.ProductMainImg}>
-                    <img src="./public/Assets/ProductsPage/Product.png" alt="" />
+                    <img src="/Assets/ProductsPage/Product.png" alt="" />
                 </div>
 
                 <div className={styles.ProductMain}>

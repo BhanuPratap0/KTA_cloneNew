@@ -1,7 +1,7 @@
-import first from "@/Assets/AboutPage/fixingSolFirst.svg";
-import second from "@/Assets/AboutPage/fixingSolSecond.svg";
-import third from "@/Assets/AboutPage/fixingSolThird.svg";
-import forth from "@/Assets/AboutPage/fixingSolFourth.svg";
+import first from "/Assets/AboutPage/fixingSolFirst.svg";
+import second from "/Assets/AboutPage/fixingSolSecond.svg";
+import third from "/Assets/AboutPage/fixingSolThird.svg";
+import forth from "/Assets/AboutPage/fixingSolFourth.svg";
 
 export const fixingSolutionCardsData = [
   {

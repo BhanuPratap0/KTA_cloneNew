@@ -4,7 +4,7 @@ import styles from "./Products.module.scss";
 import { ProductsLis } from "@/Data/ProductsLis";
 import ProductCard from "./ProductCard";
 import Accord from "@/Components/Accordion/Accord";
-import bannerImg from "~/Assets/ProductsPage/ProductsHeading.svg";
+import bannerImg from "/Assets/ProductsPage/ProductsHeading.svg";
 function Products() {
   return (
     <div id={styles.Products}>

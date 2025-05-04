@@ -9,7 +9,6 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"), // Now '@' refers to 'src' folder
-      "~": path.resolve(__dirname, "public"), // Now '@' refers to 'src' folder
     },
   },
 });

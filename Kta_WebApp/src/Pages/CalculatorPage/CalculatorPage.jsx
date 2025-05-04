@@ -1,7 +1,7 @@
-import TopBanner from "@/Components/TopBanner/TopBanner";
 import React from "react";
-import bannerImg from "~/Assets/CalculatorPage/Calculators.svg";
+import bannerImg from "/Assets/CalculatorPage/Calculators.svg";
 import styles from "./CalculatorPage.module.scss";
+import TopBanner from "@/Components/TopBanner/TopBanner";
 const CalculatorPage = () => {
   return (
     <div className={styles.Container}>

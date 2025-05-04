@@ -3,10 +3,10 @@ import styles from "./FooterSection.module.scss";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import { MdMailOutline } from "react-icons/md";
-import facebookIcon from "~/Assets/LandingPage/PlatFacebook.svg";
-import instagramIcon from "~/Assets/LandingPage/PlatInstagram.svg";
-import whatsappIcon from "~/Assets/LandingPage/PlatWhatsapp.svg";
-import ktaIcon from "~/Assets/LandingPage/KtaIcon.png";
+import facebookIcon from "/Assets/LandingPage/PlatFacebook.svg";
+import instagramIcon from "/Assets/LandingPage/PlatInstagram.svg";
+import whatsappIcon from "/Assets/LandingPage/PlatWhatsapp.svg";
+import ktaIcon from "/Assets/LandingPage/KtaIcon.png";
 const FooterSection = () => {
   return (
     <div className={styles.FooterSection}>

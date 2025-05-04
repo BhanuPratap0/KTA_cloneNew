@@ -5,10 +5,11 @@ import HeroSection from "./HeroSection/HeroSection";
 import Testimonials from "./Testimonials/Testimonials";
 import ShowCaseSection from "./ShowCaseSection/ShowCaseSection";
 import FeatureSection from "./FeatureSection/FeatureSection";
-import FadeSlider from "@/Components/Slider/FadeSlider";
-import SecondFadeSlider from "@/Components/Slider/SecondFadeSlider";
 import styles from "./LandingPage.module.scss";
 import FooterSection from "./FooterSection/FooterSection";
+import FadeSlider from "@/Components/Slider/FadeSlider";
+import SecondFadeSlider from "@/Components/Slider/SecondFadeSlider";
+
 
 function LandingPage() {
   return (

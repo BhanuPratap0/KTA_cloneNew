@@ -5,7 +5,6 @@ import {
   Route,
   Router,
   Routes,
-  useLocation,
 } from "react-router-dom";
 import { appRoutes } from "./AppRoutes";
 
