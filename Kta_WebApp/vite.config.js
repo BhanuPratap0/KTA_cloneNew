@@ -8,7 +8,8 @@ export default defineConfig({
   base: process.env.VITE_BASE_PAATH || "./",
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "public"), // Now '@' refers to 'src' folder
+      "@": path.resolve(__dirname, "src"), // Now '@' refers to 'src' folder
+      "~": path.resolve(__dirname, "public"), // Now '@' refers to 'src' folder
     },
   },
 });

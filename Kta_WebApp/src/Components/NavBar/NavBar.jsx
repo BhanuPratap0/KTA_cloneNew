@@ -4,7 +4,7 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import ktaLogo from "@/Assets/LandingPage/KtaIcon.png";
+import ktaLogo from "~/Assets/LandingPage/KtaIcon.png";
 import "./NavBar.scss";
 import { useLocation } from "react-router-dom";
 

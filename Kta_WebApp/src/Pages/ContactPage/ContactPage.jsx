@@ -1,6 +1,6 @@
 import TopBanner from "@/Components/TopBanner/TopBanner";
 import React from "react";
-import bannerImg from "@/Assets/ContactPage/Get_in_touch.svg";
+import bannerImg from "~/Assets/ContactPage/Get_in_touch.svg";
 import styles from "./ContactPage.module.scss";
 const ContactPage = () => {
   return (
