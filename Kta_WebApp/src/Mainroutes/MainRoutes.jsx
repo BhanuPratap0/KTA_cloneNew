@@ -21,7 +21,7 @@ const MainRoutes = () => {
           <Route path="/" element={<Navigate to={"landingPage"} />}></Route>
           <Route path="/landingPage" element={<LandingPage />} />
 
-          <Route path="/app" element={<AppLayout />}>
+          <Route path="/" element={<AppLayout />}>
             {appRoutes.map((route, index) => (
               <Route path={route.path} element={route.element} key={index} />
             ))}{" "}

@@ -34,7 +34,7 @@ function NavBar() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link className="navLink" href="/app/about">
+            <Nav.Link className="navLink" href="/about">
               ABOUT
             </Nav.Link>
 
@@ -72,13 +72,13 @@ function NavBar() {
             <Nav.Link className={isAboutPage?"navLinkWhite":"navLink"} href="#action2">
               BLOG
             </Nav.Link>
-            <Nav.Link className="navLink" href="/app/calculator">
+            <Nav.Link className="navLink" href="/calculator">
               CALCULATORS
             </Nav.Link>
-            <Nav.Link className="navLink" href="/app/careers">
+            <Nav.Link className="navLink" href="/careers">
               CAREERS
             </Nav.Link>
-            <Nav.Link href="#action2" className="/app/contact">
+            <Nav.Link href="#action2" className="/contact">
               Contact
             </Nav.Link>
           </Nav>
