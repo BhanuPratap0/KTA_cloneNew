@@ -4,6 +4,7 @@ import CalculatorPage from "@/Pages/CalculatorPage/CalculatorPage";
 
 import Products from "@/Pages/Products/Products";
 import Downloads from "@/Pages/DownloadPage/Downloads";
+import ContactPage from "@/Pages/ContactPage/ContactPage";
 
 export const appRoutes = [
   {
@@ -23,7 +24,11 @@ export const appRoutes = [
     element: <CalculatorPage />,
   },
   {
-    path: "Downloads",
+    path: "downloads",
     element: <Downloads />,
+  },
+  {
+    path: "contact",
+    element: <ContactPage />,
   },
 ];
