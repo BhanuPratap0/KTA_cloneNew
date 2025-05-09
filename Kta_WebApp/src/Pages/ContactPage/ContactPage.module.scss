@@ -1,10 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-#contactPage {
+$mobile: 768px;
+#contactPageDesk {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+#contactPageMob {
+  display: none;
+  @media (max-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .contactSection {
   display: flex;
@@ -13,11 +25,21 @@
   width: 95%;
   margin-top: 50px;
   margin-bottom: 50px;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
   .contactLeftSection {
     display: flex;
     flex-direction: column;
     gap: 3rem;
     margin-left: 5%;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      margin-left: 15%;
+    }
   }
   .contactLeftSectionBlock {
     display: flex;
@@ -32,7 +54,18 @@
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
-    line-height: 125.025%; /* 50.01px */
+    line-height: 125%;
+
+    @media (max-width: $mobile) {
+      color: #222;
+      leading-trim: both;
+      text-edge: cap;
+      font-family: Manrope;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 125%;
+    }
   }
   .contactLeftSectionSubBlock {
   }
@@ -46,6 +79,15 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
+
+    @media (max-width: $mobile) {
+      color: #000;
+      font-family: Poppins;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 162%;
+    }
   }
   .contactLeftSectionSubBlockDelails {
     color: #000;
@@ -55,16 +97,52 @@
     font-weight: 400;
     line-height: 162%;
     margin-left: 2rem;
+
+    @media (max-width: $mobile) {
+      color: #000;
+      font-family: Poppins;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 162%;
+    }
+  }
+  .contactLeftSectionSubBlockDelailsDiffType {
+    @media (max-width: $mobile) {
+      color: #000;
+      font-family: Poppins;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 162%;
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
   }
   .contactRightSection {
     width: 45%;
-
+    @media (max-width: $mobile) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     .contactForm {
       display: flex;
       flex-direction: column;
       gap: 1rem;
+      width: 90%;
       margin-bottom: 2rem;
       margin-top: 2rem;
+
+      @media (max-width: $mobile) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
     .contactRightSectionHeading {
       color: #222;
@@ -75,16 +153,36 @@
       font-style: normal;
       font-weight: 600;
       line-height: 125.025%;
+
+      @media (max-width: $mobile) {
+        color: #222;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Manrope;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+        align-self: flex-start;
+        margin-left: 1rem;
+      }
     }
     .ContactInputBox {
       display: flex;
       height: 62px;
       width: 100%;
-      padding: 0px 25px;
-      align-items: center;
+      padding:0px 25px;
       border-radius: 8px;
       border: 1.352px solid #e8e8e8;
       background: #ededed;
+      @media (max-width: $mobile) {
+        display: flex;
+        height: 40px;
+        padding: 0px 15px;
+        border-radius: 4.889px;
+        border: 0.826px solid #e8e8e8;
+        background: #ededed;
+      }
     }
     .ContactInputBoxLarge {
       display: flex;
@@ -94,6 +192,17 @@
       border-radius: 8px;
       border: 1.352px solid #e8e8e8;
       background: #ededed;
+
+      @media (max-width: $mobile) {
+        display: flex;
+        height: 136px;
+        padding: 16px 14.874px;
+        align-items: flex-start;
+        gap: 8.263px;
+        border-radius: 4.889px;
+        border: 0.826px solid #e8e8e8;
+        background: #ededed;
+      }
     }
   }
 }
@@ -148,6 +257,12 @@
   width: 95%;
   height: 500px;
   border-radius: 12px;
-  border:1px solid rgba(0, 0, 0, 0.219);
+  border: 1px solid rgba(0, 0, 0, 0.219);
   margin-bottom: 50px;
+
+  @media (max-width: $mobile) {
+    height: 200px;
+    width: 90%;
+    margin-top: 50px;
+  }
 }
