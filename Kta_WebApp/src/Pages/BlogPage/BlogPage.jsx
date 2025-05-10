@@ -7,7 +7,7 @@ import BlogCard from "@/Components/BlogCard/BlogCard";
 import { Container } from "react-bootstrap";
 const BlogPage = () => {
   return (
-    <Container style={{ maxWidth: "1220px" }}>
+    <Container style={{ maxWidth: "1440px" }}>
       <div className={styles.Wrapper}>
         <TopBanner
           head={blogsIcon}

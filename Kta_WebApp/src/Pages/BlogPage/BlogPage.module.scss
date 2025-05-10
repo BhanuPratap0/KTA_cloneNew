@@ -10,12 +10,10 @@ $mobile: 768px;
 .BlogsContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 40px;
-  width: 95%;
+  width: 100%;
   @media screen and (max-width: $mobile) {
-    width: 93%;
     gap: 32px;
-    justify-content: center;
   }
 }
