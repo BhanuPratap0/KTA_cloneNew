@@ -14,7 +14,7 @@ const AppLayout = () => {
       <NavBar ChangeStyles={isAboutPage} />
       <Outlet />
       <SecondFadeSlider />
-      <FooterSection />
+      {/* <FooterSection /> */}
     </div>
   );
 };

@@ -1,0 +1,19 @@
+$mobile: 768px;
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  align-items: center;
+  margin-bottom: 95px;
+}
+
+.BlogsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  @media screen and (max-width: $mobile) {
+    gap: 32px;
+  }
+}

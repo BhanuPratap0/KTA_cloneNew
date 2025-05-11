@@ -1,3 +1,5 @@
+$mobile: 768px;
+
 .Container {
   display: flex;
   flex-direction: column;
@@ -10,7 +12,11 @@
     font-size: 56px;
     font-style: normal;
     font-weight: 600;
-    line-height: 125.025%; /* 70.014px */
+    line-height: 125.025%;
+    @media screen and (max-width: $mobile) {
+      font-size: 24px;
+      width: auto;
+    }
     span {
       background: var(
         --brand,
@@ -27,6 +33,9 @@
     display: flex;
     gap: 30px;
     flex-direction: column;
+    @media screen and (max-width: $mobile) {
+      width: auto;
+    }
 
     .Buttons {
       display: flex;
@@ -67,6 +76,9 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    @media screen and (max-width: $mobile) {
+      width: auto;
+    }
 
     .SizeInput {
       width: 281px;
@@ -78,6 +90,9 @@
       font-style: normal;
       font-weight: 600;
       line-height: 125%;
+      @media screen and (max-width: $mobile) {
+        font-size: 24px;
+      }
     }
   }
 
@@ -87,11 +102,19 @@
     flex-direction: column;
     gap: 40px;
     margin: 70px 0px;
+    @media screen and (max-width: $mobile) {
+      width: auto;
+      gap: 34px;
+    }
 
     .BulletPoints {
       display: flex;
       flex-direction: column;
       gap: 16px;
+      @media screen and (max-width: $mobile) {
+        font-size: 12px;
+        padding-left: 1rem;
+      }
     }
 
     .Heading {
@@ -101,6 +124,9 @@
       font-style: normal;
       font-weight: 600;
       line-height: 125.025%; /* 70.014px */
+      @media screen and (max-width: $mobile) {
+        font-size: 24px;
+      }
     }
   }
 }
@@ -111,6 +137,10 @@
   gap: 1rem;
   justify-content: start;
   margin-top: 40px;
+
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
   .activeButton {
     display: flex;
     padding: 10px 24px;
@@ -138,6 +168,9 @@
 .SizesContainer {
   display: flex;
   gap: 24px;
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+  }
   .Size {
     display: flex;
     flex-direction: column;
@@ -146,10 +179,18 @@
       font-family: Poppins;
       font-size: 16px;
       font-weight: 400;
+      @media screen and (max-width: $mobile) {
+        font-size: 12px;
+        margin-bottom: 0px;
+        font-weight: 400;
+      }
     }
 
     .ResultLabel {
       width: 170px;
+      @media screen and (max-width: $mobile) {
+        width: 127px;
+      }
     }
     input {
       border-radius: 8px;
@@ -160,6 +201,10 @@
       height: 62px;
       padding: 0px 24px;
       align-items: center;
+      @media screen and (max-width: $mobile) {
+        width: 296px;
+        height: 38px;
+      }
     }
   }
 }

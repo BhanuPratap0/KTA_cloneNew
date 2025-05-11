@@ -1,0 +1,70 @@
+$mobile: 768px;
+
+.Card {
+  display: flex;
+  width: 334px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 16px;
+  border: 2px solid #e2e2e2;
+  background: #fff;
+  @media screen and (max-width: $mobile) {
+    width: 170px;
+    gap: 16px;
+  }
+
+  .Img {
+    img {
+      width: 330px;
+      border-radius: 13px 13px 0px 0px;
+      @media screen and (max-width: $mobile) {
+        width: 168px;
+        height: 87.653px;
+      }
+    }
+  }
+
+  .Content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .Title {
+      color: #222;
+      font-family: Manrope;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+
+      @media screen and (max-width: $mobile) {
+        font-size: 10px;
+      }
+    }
+    .Button {
+      display: flex;
+      padding: 11.945px 23.89px;
+      justify-content: center;
+      align-items: center;
+      gap: 7.466px;
+      border-radius: 91px;
+      background: #e31e24;
+      color: white;
+      border: none;
+      width: 135px;
+
+      @media screen and (max-width: $mobile) {
+        display: flex;
+        width: 80px;
+        padding: 6.185px 12.369px;
+        justify-content: center;
+        align-items: center;
+        gap: 3.865px;
+        border-radius: 47.384px;
+        background: #e31e24;
+        font-size: 10px;
+      }
+    }
+  }
+}
