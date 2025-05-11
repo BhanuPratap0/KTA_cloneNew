@@ -4,6 +4,9 @@ $mobile: 768px;
   overflow: hidden;
   height: 500px;
   position: relative;
+  @media (max-width: $mobile) {
+    height: 300px;
+  }
 
   img {
     background-repeat: no-repeat;
@@ -144,7 +147,7 @@ $mobile: 768px;
 }
 
 .slick-dots {
-  position:absolute;
+  position: absolute;
   bottom: 272px;
   display: block;
   width: 100%;
