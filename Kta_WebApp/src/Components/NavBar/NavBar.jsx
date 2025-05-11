@@ -75,7 +75,7 @@ function NavBar() {
             <Nav.Link className="navLink" href="/app/careers">
               CAREERS
             </Nav.Link>
-            <Nav.Link href="#action2" className="/app/contact">
+            <Nav.Link href="/app/contact" className="contactButton">
               Contact
             </Nav.Link>
           </Nav>

@@ -159,6 +159,7 @@ $mobile: 768px;
 
   @media (max-width: $mobile) {
     display: none;
+
   }
 }
 
@@ -166,14 +167,30 @@ $mobile: 768px;
   font-size: 8px; /* Adjust size if needed */
   color: rgba(255, 255, 255, 0.28); /* Default dot color */
   opacity: 1; /* Less prominent when not active */
+  
+  
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .slick-dots li.slick-active button:before {
   color: #e31e24; /* Active dot color (e.g., Facebook blue) */
   opacity: 1; /* Fully visible */
+  
+  
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .slick-dots li {
   margin: 0 0px; /* Reduce this value to control spacing, or use 0 for no gap */
   padding: 0;
+  
+
+  
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }
