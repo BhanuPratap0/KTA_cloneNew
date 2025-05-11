@@ -26,6 +26,20 @@ $mobile: 786px;
   }
   .TopBannerHead {
   }
+  .TopBannerHighlight {
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125.025%;
+    letter-spacing: -0.64px;
+    background: linear-gradient(102deg, #e31e24 8.72%, #262065 155.31%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   .TopBannerDetails {
     color: #fff;
     font-family: Poppins;
