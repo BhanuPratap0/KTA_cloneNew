@@ -2,17 +2,15 @@ $mobile: 768px;
 
 .sliderImg {
   overflow: hidden;
-  height: 500px;
   position: relative;
 
   img {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    bottom: 380px;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
-
+    
     @media (max-width: $mobile) {
       bottom: 20px;
       width: 100%;
