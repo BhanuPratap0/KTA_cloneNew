@@ -5,12 +5,16 @@ import bannerImg from "@/Assets/CareersPage/CareersHeading.png";
 const CareersPage = () => {
   return (
     <div id={styles.Careers}>
-      <TopBanner details="Whether you're a contractor, architect, or homeowner, our easy-to-use calculators help you determine the right amount of product for your surface care needs." head={bannerImg} />
+      <TopBanner
+        details="Whether you're a contractor, architect, or homeowner, our easy-to-use calculators help you determine the right amount of product for your surface care needs."
+        head={bannerImg}
+      />
 
       <div id={styles.headingDiv}>
         <div className={styles.heading}>
           KTA Solutions
-          <br /> Welcomes Everyone!
+          <br /> Welcomes 
+          <span> Everyone!</span>
         </div>
       </div>
 
@@ -85,7 +89,9 @@ const CareersPage = () => {
             ></textarea>
           </div>
           <div className={styles.inputDiv}>
-            <button className={styles.submitButton} type="submit">Submit Now</button>
+            <button className={styles.submitButton} type="submit">
+              Submit Now
+            </button>
           </div>
         </form>
       </div>
