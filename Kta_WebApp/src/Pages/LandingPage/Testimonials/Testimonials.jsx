@@ -57,7 +57,7 @@ const Testimonials = () => {
           onClick={scrollLeft}
         >
           {canScrollLeft && (
-            <img src="./src/Assets/LandingPage/left-arrow.svg" alt="" />
+            <img src="/Assets/LandingPage/left-arrow.svg" alt="" />
           )}
         </button>
         <div className={styles.TestiCards} ref={testiCardsRef}>
@@ -70,7 +70,7 @@ const Testimonials = () => {
           onClick={scrollRight}
         >
           {canScrollRight && (
-            <img src="./src/Assets/LandingPage/right-arrow.svg" alt="" />
+            <img src="/Assets/LandingPage/right-arrow.svg" alt="" />
           )}
         </button>
       </div>
