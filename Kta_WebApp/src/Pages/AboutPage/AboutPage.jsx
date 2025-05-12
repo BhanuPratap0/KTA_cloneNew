@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./AboutPage.module.scss";
 import CenterSlider from "@/Components/Slider/CenterSlider";
 import { fixingSolutionCardsData } from "@/Data/AboutPage";
-import heroBanner from "@/Assets/AboutPage/HeroBanner.png";
+import heroBanner from "@/Assets/AboutPage/heroBanner.png";
 import ourStoryPropImg from "@/Assets/AboutPage/ourStoryProp.png";
 import missionSvg from "@/Assets/AboutPage/missionSVG.svg";
 import visionSvg from "@/Assets/AboutPage/visionSVG.svg";
