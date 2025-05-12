@@ -5,6 +5,7 @@ import CalculatorPage from "@/Pages/CalculatorPage/CalculatorPage";
 import Products from "@/Pages/Products/Products";
 import Downloads from "@/Pages/DownloadPage/Downloads";
 import ContactPage from "@/Pages/ContactPage/ContactPage";
+import BlogPage from "@/Pages/BlogPage/BlogPage";
 
 export const appRoutes = [
   {
@@ -13,11 +14,11 @@ export const appRoutes = [
   },
   {
     path: "products",
-    element:<Products/>
+    element: <Products />,
   },
   {
     path: "careers",
-    element: <CareersPage/>
+    element: <CareersPage />,
   },
   {
     path: "calculator",
@@ -30,5 +31,9 @@ export const appRoutes = [
   {
     path: "contact",
     element: <ContactPage />,
+  },
+  {
+    path: "blogs",
+    element: <BlogPage />,
   },
 ];

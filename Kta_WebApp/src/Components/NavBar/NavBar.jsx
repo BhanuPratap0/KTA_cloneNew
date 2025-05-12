@@ -9,9 +9,6 @@ import "./NavBar.scss";
 import { useLocation } from "react-router-dom";
 
 function NavBar() {
-
-
-
   const location = useLocation();
   const isAboutPage = location.pathname.includes("/app/about")
   const aboutPageStyles = {

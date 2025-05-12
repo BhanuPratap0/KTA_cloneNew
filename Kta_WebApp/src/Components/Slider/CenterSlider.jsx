@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import materialThreeImg from "@/Assets/AboutPage/MaterialThree.png";
-import materialTwoImg from "@/Assets/AboutPage/MaterialTwo.png";
-import materialOneImg from "@/Assets/AboutPage/materialOne.png";
+import materialOneImg from "@/Assets/AboutPage/materialOne.jpg";
+import materialTwoImg from "@/Assets/AboutPage/materialTwo.jpg";
+import materialThreeImg from "@/Assets/AboutPage/materialThree.jpg";
 import './CenterSlider.css';
 function CenterSlider() {
   const settings = {
@@ -49,10 +49,13 @@ function CenterSlider() {
           <img src={materialOneImg} alt="" />
         </div>
         <div>
-          <img src={materialOneImg} alt="" />
+          <img src={materialTwoImg} alt="" />
         </div>
         <div>
           <img src={materialOneImg} alt="" />
+        </div>
+        <div>
+          <img src={materialThreeImg} alt="" />
         </div>
       </Slider>
     </div>
