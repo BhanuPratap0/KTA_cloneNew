@@ -1,5 +1,8 @@
-import secondSliderImg from "@/Assets/LandingPage/SecondSliderPic.png";
-import firstSliderImg from "@/Assets/LandingPage/FirstSliderFirstPic.png";
+import secondSliderImg1 from "@/Assets/LandingPage/SecondSlider/1.jpg";
+import firstSliderImg1 from "@/Assets/LandingPage/FirstSlider/1.png";
+import firstSliderImg2 from "@/Assets/LandingPage/FirstSlider/2.png";
+import firstSliderImg3 from "@/Assets/LandingPage/FirstSlider/3.png";
+import firstSliderImg4 from "@/Assets/LandingPage/FirstSlider/4.png";
 export const ProductList = [
   {
     img: "./src/Assets/LandingPage/ceremic solutions.svg",
@@ -30,42 +33,42 @@ export const testimonialData = [
   {
     comment:
       "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-    profilePic: firstSliderImg,
+    profilePic: firstSliderImg1,
     name: "Serhiy Hipskyy",
     designation: "CEO Universal",
   },
   {
     comment:
       "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-    profilePic: firstSliderImg,
+    profilePic: firstSliderImg1,
     name: "Serhiy Hipskyy",
     designation: "CEO Universal",
   },
   {
     comment:
       "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-    profilePic: firstSliderImg,
+    profilePic: firstSliderImg1,
     name: "Serhiy Hipskyy",
     designation: "CEO Universal",
   },
   {
     comment:
       "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-    profilePic: firstSliderImg,
+    profilePic: firstSliderImg1,
     name: "Serhiy Hipskyy",
     designation: "CEO Universal",
   },
   {
     comment:
       "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-    profilePic: firstSliderImg,
+    profilePic: firstSliderImg1,
     name: "Serhiy Hipskyy",
     designation: "CEO Universal",
   },
   {
     comment:
       "KTA Solutions' ceramic materials transformed our project. Exceptional quality and support!",
-    profilePic: firstSliderImg,
+    profilePic: firstSliderImg1,
     name: "Serhiy Hipskyy",
     designation: "CEO Universal",
   },
@@ -96,15 +99,13 @@ export const featureData = [
 ];
 
 export const firstSliderData = [
-  firstSliderImg,
-  firstSliderImg,
-  firstSliderImg,
+  firstSliderImg1,
+  firstSliderImg2,
+  firstSliderImg3,
+  firstSliderImg4
+  
 ];
 
 export const secondSliderData = [
-  secondSliderImg,
-  secondSliderImg,
-  secondSliderImg,
-  secondSliderImg,
-  secondSliderImg,
+  secondSliderImg1,
 ];

@@ -7,7 +7,7 @@ import "./SecondFadeSlider.scss"
 function SecondFadeSlider() {
   const settings = {
     fade:true,
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,

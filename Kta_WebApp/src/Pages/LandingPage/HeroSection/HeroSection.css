@@ -1,0 +1,117 @@
+#hero {
+  .slick-arrow {
+    display: none !important;
+  }
+
+  .heroBannerFirst {
+    background-image: url(./src/Assets/LandingPage/HeroSection/HeroOne.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 765px;
+  }
+  .heroBannerFirstBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: left;
+    padding-top: 13%;
+    padding-left: 7%;
+  }
+  .heroBannerFirstHeading {
+    color: #fff;
+    font-family: Manrope;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 125.025%; /* 62.512px */
+    text-transform: capitalize;
+  }
+  .heroBannerFirstDetails {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .outline-button {
+    width: fit-content;
+  }
+
+  /* // */
+
+  .heroBannerSecond {
+    background-image: url(./src/Assets/LandingPage/HeroSection/HeroTwo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 765px;
+  }
+  .heroBannerSecondBlock {
+    /* height: 765px; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: left;
+    padding-top: 13%;
+    padding-left: 7%;
+  }
+  
+
+  
+  .heroBannerSecondHeading {
+    color: #fff;
+    font-family: Manrope;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 125.025%; /* 62.512px */
+    text-transform: capitalize;
+  }
+  .heroBannerSecondDetails {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  /* // */
+
+  
+  .heroBannerThird {
+    background-image: url(./src/Assets/LandingPage/HeroSection/HeroTwo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 765px;
+  }
+  .heroBannerThirdBlock {
+    /* height: 765px; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: left;
+    padding-top: 13%;
+    padding-left: 7%;
+  }
+  
+
+  
+  .heroBannerThirdHeading {
+    color: #fff;
+    font-family: Manrope;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 125.025%; /* 62.512px */
+    text-transform: capitalize;
+  }
+  .heroBannerThirdDetails {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
