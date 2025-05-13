@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import ktaLogo from "@/Assets/LandingPage/ktaIcon.png";
 import "./NavBar.scss";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation  } from "react-router-dom";
 
 function NavBar() {
   const location = useLocation();
@@ -21,7 +21,7 @@ function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-white px-4" style={isAboutPage?aboutPageStyles:{} }>
       <Container fluid>
-        <Navbar.Brand href="#">
+        <Navbar.Brand as={Link} to="/">
           <img src={ktaLogo} width={"100"} alt="KTA" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -31,7 +31,7 @@ function NavBar() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link className="navLink" href="/app/about">
+            <Nav.Link className={isAboutPage?"navLinkWhite":"navLink"}  as={Link} to="/app/about">
               ABOUT
             </Nav.Link>
 
@@ -49,19 +49,19 @@ function NavBar() {
                 Something else here
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link className={isAboutPage?"navLinkWhite":"navLink"} href="/app/downloads">
+            <Nav.Link className={isAboutPage?"navLinkWhite":"navLink"} as={Link} to="/app/downloads">
               Download
             </Nav.Link>
-            <Nav.Link className={isAboutPage?"navLinkWhite":"navLink"} href="#action2">
+            <Nav.Link className={isAboutPage?"navLinkWhite":"navLink"} as={Link} to="#action2">
               BLOG
             </Nav.Link>
-            <Nav.Link className="navLink" href="/app/calculator">
+            <Nav.Link className={isAboutPage?"navLinkWhite":"navLink"} as={Link} to="/app/calculator">
               CALCULATORS
             </Nav.Link>
-            <Nav.Link className="navLink" href="/app/careers">
+            <Nav.Link className={isAboutPage?"navLinkWhite":"navLink"} as={Link} to="/app/careers">
               CAREERS
             </Nav.Link>
-            <Nav.Link href="/app/contact" className="contactButton">
+            <Nav.Link as={Link} to="/app/contact" className="contactButton">
               Contact
             </Nav.Link>
           </Nav>

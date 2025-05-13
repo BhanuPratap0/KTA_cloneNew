@@ -3,9 +3,7 @@ import styles from "./FooterSection.module.scss";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import { MdMailOutline } from "react-icons/md";
-import facebookIcon from "@/Assets/LandingPage/PlatFacebook.svg";
-import instagramIcon from "@/Assets/LandingPage/PlatInstagram.svg";
-import whatsappIcon from "@/Assets/LandingPage/PlatWhatsapp.svg";
+
 import ktaIcon from "@/Assets/LandingPage/KtaIcon.png";
 import { Container } from "react-bootstrap";
 const FooterSection = () => {
@@ -13,14 +11,11 @@ const FooterSection = () => {
     <Container style={{ maxWidth: "1440px" }}>
       <div className={styles.FooterSection}>
         <div className={styles.RightTopSection}>
-          <div>
-            <img src={facebookIcon} />
+          <div className={styles.facebookIcon}>
           </div>
-          <div>
-            <img src={instagramIcon} alt="" />
+          <div className={styles.instagramIcon} >
           </div>
-          <div>
-            <img src={whatsappIcon} alt="" />
+          <div className={styles.whatsappIcon}>
           </div>
         </div>
         <div className={styles.LeftSection}>

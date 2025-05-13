@@ -56,10 +56,15 @@
   padding: 10px;
   cursor: pointer;
   z-index: 10;
-
+  border-radius: 50%;
+  background: #00000054;
   img {
     width: 40px;
     height: 40px;
+  }
+  img{
+    transform: scale(0.5);
+   
   }
 }
 .Left {

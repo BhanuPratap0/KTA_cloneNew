@@ -52,27 +52,28 @@ const Testimonials = () => {
         />
       </div>
       <div className={styles.TestiCardsWrapper}>
+          {canScrollLeft && (
         <button
           className={`${styles.ScrollButton} ${styles.Left}`}
           onClick={scrollLeft}
         >
-          {canScrollLeft && (
+            
             <img src="/Assets/LandingPage/left-arrow.svg" alt="" />
-          )}
         </button>
+          )}
         <div className={styles.TestiCards} ref={testiCardsRef}>
           {testimonialData.map((item, index) => (
             <TestiCards key={index} data={item} />
           ))}
         </div>
+          {canScrollRight && (
         <button
           className={`${styles.ScrollButton} ${styles.Right}`}
           onClick={scrollRight}
         >
-          {canScrollRight && (
             <img src="/Assets/LandingPage/right-arrow.svg" alt="" />
-          )}
         </button>
+          )}
       </div>
     </div>
   );

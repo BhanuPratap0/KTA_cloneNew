@@ -145,17 +145,18 @@ $mobile: 768px;
 }
 
 .slick-dots {
+  
   position: absolute;
   bottom: 272px;
   display: block;
-  width: 100%;
+  // width: 100%;
   padding: 0;
   margin: 0;
   list-style: none;
   text-align: center;
   color: white;
   transform: rotate(90deg);
-  right: -650px;
+  right: -47%;
   z-index: 500;
 
   @media (max-width: $mobile) {

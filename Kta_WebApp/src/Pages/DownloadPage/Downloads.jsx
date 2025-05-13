@@ -17,13 +17,14 @@ function Downloads() {
         <div className={styles.outlineButton}>Brochure & Catalogue</div>
     </div>
 
-    <div className={styles.DownloadOptionMob}>
+
+    {/* <div className={styles.DownloadOptionMob}>
         <div className={styles.outlineButtonMob}>Technical Data Sheets</div>
         <div className={styles.outlineButtonMob}>Material Safety Data Sheets</div>
         <div className={styles.outlineButtonMob}>Method Statements</div>
         <div className={styles.outlineButtonMob}>Certifications</div>
         <div className={styles.outlineButtonMob}>Brochure & Catalogue</div>
-    </div>
+    </div> */}
 
     <div className={styles.DownloadCards}>
         <div className={styles.DownloadCard}>
