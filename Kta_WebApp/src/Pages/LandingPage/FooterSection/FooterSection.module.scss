@@ -98,19 +98,124 @@ $mobile: 768px;
   font-weight: 800 !important;
   line-height: normal;
   margin-bottom: 12px !important;
+  text-decoration: none !important;
+  cursor:default !important;
+  &:hover{
+    color: black !important;
+  }
 }
 
 .RightTopSection {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  position: absolute;
-  top: -70px;
-  right: 150px;
-  //this is temperay i think will not work while zoom in or out
+  position: absolute; 
+  top: -12%;
+  right: 10%;
+  
+  .facebookIcon {
+    cursor: pointer;
+    position: relative;
+    height: 68px;
+    width: 68px;
+    background-image: url('./src/Assets/LandingPage/FooterPlatformIcon/PlatFacebook.png');
+    background-repeat: no-repeat;
+    background-size: contain;  /* Ensure the image maintains its aspect ratio */
+    transition: transform 0.3s ease-in-out;
+    border:1px solid rgba(153, 3, 3, 0.336);
+    border-radius:50% ;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('./src/Assets/LandingPage/FooterPlatformIcon/PlatFacebookHover.png');
+      background-repeat: no-repeat;
+      background-size: contain;  /* Match the original size */
+      background-position: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+  
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+  //whatsapp
+
+  .whatsappIcon {
+    cursor: pointer;
+    position: relative;
+    height: 68px;
+    width: 68px;
+    background-image: url('./src/Assets/LandingPage/FooterPlatformIcon/PlatWhatsapp.png');
+    background-repeat: no-repeat;
+    background-size: contain;  /* Ensure the image maintains its aspect ratio */
+    transition: transform 0.3s ease-in-out;
+    border:1px solid rgba(153, 3, 3, 0.336);
+    border-radius:50% ;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('./src/Assets/LandingPage/FooterPlatformIcon/PlatWhatsappHover.png');
+      background-repeat: no-repeat;
+      background-size: contain;  /* Match the original size */
+      background-position: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+  
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+  //insta
+
+  .instagramIcon {
+    cursor: pointer;
+    position: relative;
+    height: 68px;
+    width: 68px;
+    background-image: url('./src/Assets/LandingPage/FooterPlatformIcon/PlatInstagram.png');
+    background-repeat: no-repeat;
+    background-size: contain;  /* Ensure the image maintains its aspect ratio */
+    transition: transform 0.3s ease-in-out;
+    border:1px solid rgba(153, 3, 3, 0.336);
+    border-radius:50% ;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('./src/Assets/LandingPage/FooterPlatformIcon/PlatInstagramHover.png');
+      background-repeat: no-repeat;
+      background-size: contain;  /* Match the original size */
+      background-position: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+  
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+
+
   @media (max-width: $mobile) {
     top: -78px;
     right: auto;
     transform: scale(0.8);
   }
+
 }

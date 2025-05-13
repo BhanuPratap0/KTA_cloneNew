@@ -1,48 +1,54 @@
-#show{
+#show {
+  .slider-container {
+    width: 80%;
+    
+    margin: 0 auto; /* Centers the slider */
+    overflow: hidden;
+  }
 
-    .slider-container {
-        width: 70%;
-        margin: 0 auto;  /* Centers the slider */
-        overflow: hidden;
-}
+  /* Making the Track Use the Full Width */
+  .slick-track {
+    display: flex !important;
+  }
 
-.slick-slider {
-    width: 100%;  /* Ensures the slider fills the container */
-}
-.slick-prev {
+  /* Center the Cards */
+  .slick-slide {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .slick-slider {
+    width: 100%; /* Ensures the slider fills the container */
+  }
+  .slick-prev {
     right: -2rem !important;
     z-index: 999;
     height: 50vh !important;
     width: 10% !important;
   }
-  
+
   .slick-next {
     right: -2rem !important;
     z-index: 999;
     height: 50vh !important;
     width: 10% !important;
-
   }
-  
+
   /* Replace Default Arrows with Unicode Characters */
   .slick-prev::before {
     content: "\276E" !important; /* Left arrow Unicode */
     font-size: 2rem !important;
     color: black !important; /* Adjust arrow color */
     position: absolute;
-    right: 40%;
+    right: 60%;
     top: 40%;
   }
-  
+
   .slick-next::before {
     content: "\276F" !important; /* Right arrow Unicode */
     font-size: 2rem !important;
     color: black !important; /* Adjust arrow color */
     position: absolute;
-    right: 40%;
+    right: 10%;
     top: 40%;
   }
-  
-
-
 }
