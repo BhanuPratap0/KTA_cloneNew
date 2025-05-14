@@ -26,7 +26,19 @@ export const ProductList = [
     title: "Repair Solutions",
     description:
       "Professional-grade products to restore and strengthen surfaces",
+  },,
+  {
+    img: "/Assets/LandingPage/stone care.svg",
+    title: "Stone Care & Protection",
+    description:
+      "Premium products to enhance, clean, and preserve natural stones.",
   },
+  {
+    img: "/Assets/LandingPage/stone care.svg",
+    title: "Stone Care & Protection",
+    description:
+      "Premium products to enhance, clean, and preserve natural stones.",
+  }
 ];
 
 export const testimonialData = [

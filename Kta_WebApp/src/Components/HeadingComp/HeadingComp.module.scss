@@ -1,3 +1,4 @@
+$mobile:786px;
 .HeadingClass {
   text-align: center;
   font-family: Manrope;
@@ -9,6 +10,10 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  
+  @media (max-width:$mobile){
+    font-size: 2rem;
+  }
 
   p {
     font-family: Manrope;
@@ -20,5 +25,10 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    
+  @media (max-width:$mobile){
+    font-size: 1.2rem;
   }
+  }
+
 }

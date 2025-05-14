@@ -21,27 +21,50 @@ const ShowCaseSection = () => {
 
 
   return (
-    <div id="show" className={styles.ShowCaseContainer}>
-      <div className={styles.Headings}>
-        <HeadingComp heading={"SHOWCASE"} subHeading={"Our Products"} />
-        <div className={styles.SubHeading}>
-          Discover our range of industry-leading products.
+    <>
+      <div id="showDesk" className={`${styles.showDesk} ${styles.showMobile}`}>
+        <div className={styles.Headings}>
+          <HeadingComp heading={"SHOWCASE"} subHeading={"Our Products"} />
+          <div className={styles.SubHeading}>
+            Discover our range of industry-leading products.
+          </div>
         </div>
-      </div>
-    
 
-      <div className="slider-container">
-        <Slider {...settings}>
-          {ProductList.map((productItem, index) => (
-            <ProductCard data={productItem} />
-          ))}
 
-        </Slider>
+        <div className="slider-container">
+          <Slider {...settings}>
+            {ProductList.map((productItem, index) => (
+              <ProductCard data={productItem} />
+            ))}
+
+          </Slider>
+        </div>
+        <div className={styles.fitButton}>
+          <GradientButton text={"View All Products"} />
+        </div>
+
       </div>
-       <div className={styles.fitButton}>
-      <GradientButton  text={"View All Products"} />
-        </div>   
-    </div>
+
+
+      <div id="showMob" className={`${styles.showMob} ${styles.showMobile}`}>
+        <div className={styles.Headings}>
+          <HeadingComp heading={"SHOWCASE"} subHeading={"Our Products"} />
+          <div className={styles.SubHeading}>
+            Discover our range of industry-leading products.
+          </div>
+        </div>
+        <div className={styles.productContainerMob}>
+
+        {ProductList.map((productItem, index) => (
+          <ProductCard data={productItem} />
+        ))}
+        </div>
+        <div className={styles.fitButton}>
+          <GradientButton text={"View All Products"} />
+        </div>
+
+      </div>
+    </>
   );
 };
 

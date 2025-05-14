@@ -112,7 +112,7 @@ $mobile: 768px;
   position: absolute; 
   top: -12%;
   right: 10%;
-  
+
   .facebookIcon {
     cursor: pointer;
     position: relative;
@@ -124,7 +124,10 @@ $mobile: 768px;
     transition: transform 0.3s ease-in-out;
     border:1px solid rgba(153, 3, 3, 0.336);
     border-radius:50% ;
-  
+    @media (max-width: $mobile) {
+      border:1px solid rgba(13, 9, 231, 0.253);
+    
+    }
     &::after {
       content: "";
       position: absolute;
@@ -157,7 +160,10 @@ $mobile: 768px;
     transition: transform 0.3s ease-in-out;
     border:1px solid rgba(153, 3, 3, 0.336);
     border-radius:50% ;
-  
+    @media (max-width: $mobile) {
+      border:1px solid rgba(9, 231, 39, 0.253);
+    
+    }
     &::after {
       content: "";
       position: absolute;
@@ -190,7 +196,10 @@ $mobile: 768px;
     transition: transform 0.3s ease-in-out;
     border:1px solid rgba(153, 3, 3, 0.336);
     border-radius:50% ;
-  
+    @media (max-width: $mobile) {
+      border:1px solid rgba(213, 9, 231, 0.253);
+    
+    }
     &::after {
       content: "";
       position: absolute;
@@ -213,7 +222,7 @@ $mobile: 768px;
 
 
   @media (max-width: $mobile) {
-    top: -78px;
+    top: 0%;
     right: auto;
     transform: scale(0.8);
   }
