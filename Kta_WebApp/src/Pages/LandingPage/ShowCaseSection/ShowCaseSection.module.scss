@@ -50,7 +50,7 @@ $mobile: 768px;
     }
   }
   .ProductsContainerDesktop {
-    display: contents;
+    display: flex;
     @media screen and (max-width: $mobile) {
       display: none;
     }

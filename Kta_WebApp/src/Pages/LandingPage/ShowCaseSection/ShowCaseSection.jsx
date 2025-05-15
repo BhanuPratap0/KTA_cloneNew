@@ -42,6 +42,7 @@ const ShowCaseSection = () => {
         <GradientButton text={"View All Products"} />
       </div>
     </div>
+    </div>
   );
 };
 
