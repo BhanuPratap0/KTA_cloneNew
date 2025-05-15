@@ -1,3 +1,4 @@
+$mobile: 768px;
 .ShowCaseContainer {
   display: flex;
   flex-direction: column;
@@ -16,6 +17,22 @@
     align-items: center;
     justify-content: center;
   }
+  .ProductsContainerDesktop {
+    display: contents;
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+  }
+  .ProductsContainerMobile {
+    display: none;
+    @media screen and (max-width: $mobile) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+  }
 
   .SubHeading {
     color: #000;
@@ -25,15 +42,17 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    @media screen and (max-width: $mobile) {
+      font-size: 10px;
+    }
   }
 
   // ShowCaseSection.module.scss
-  .fitButton{
+  .fitButton {
     // width:fit-content !important;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
   }
-  
 }
