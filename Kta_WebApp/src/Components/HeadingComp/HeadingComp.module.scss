@@ -1,3 +1,4 @@
+
 $mobile:786px;
 .HeadingClass {
   text-align: center;
@@ -10,9 +11,10 @@ $mobile:786px;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  
-  @media (max-width:$mobile){
-    font-size: 2rem;
+  @media screen and (max-width: $mobile) {
+    color: #000;
+    font-size: 24px;
+    line-height: 30.65px; /* 127.708% */
   }
 
   p {
@@ -25,10 +27,11 @@ $mobile:786px;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    
-  @media (max-width:$mobile){
-    font-size: 1.2rem;
-  }
-  }
 
+    @media screen and (max-width: $mobile) {
+      font-size: 12px;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
 }

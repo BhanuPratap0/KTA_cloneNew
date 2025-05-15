@@ -1,3 +1,5 @@
+$mobile: 768px;
+
 .FeatureSection {
   display: flex;
   padding: 40px 50px;
@@ -8,21 +10,35 @@
   flex-wrap: wrap;
   margin: 80px 60px;
   position: relative;
+  @media screen and (max-width: $mobile) {
+    justify-content: center;
+  }
 
   .LeftSection {
     display: flex;
     align-items: start;
     flex-direction: column;
-    margin-left: 80px;
-    
+    @media screen and (max-width: $mobile) {
+      font-size: 10px;
+      margin-top: 0;
+      align-items: center;
+    }
     .Text {
       margin-top: 16px;
       margin-bottom: 35px;
+      @media screen and (max-width: $mobile) {
+        font-size: 10px;
+        margin-top: 0;
+      }
     }
     .Headings {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      @media screen and (max-width: $mobile) {
+        align-items: center;
+      }
+
+      gap: 5px;
       .Heading {
         font-family: Manrope;
         font-size: 16px;
@@ -35,6 +51,12 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        @media screen and (max-width: $mobile) {
+          font-size: 12px;
+          line-height: normal;
+          margin-bottom: 0;
+        }
       }
       .SubHeading {
         width: 370px;
@@ -44,12 +66,18 @@
         font-style: normal;
         font-weight: 800;
         line-height: 64px; /* 118.519% */
+        @media screen and (max-width: $mobile) {
+          font-size: 24px;
+          line-height: 30px;
+          margin-bottom: 0;
+          text-align: center;
+        }
       }
     }
   }
 
   .RightSection {
-    display: grid ;
+    display: grid;
     grid-template-columns: repeat(2, 1fr); // 2 cards per row
     gap: 24px;
     justify-items: center;
@@ -62,6 +90,9 @@
       justify-content: center;
       align-items: center;
       gap: 5px;
+      @media screen and (max-width: $mobile) {
+        width: 170px;
+      }
 
       .Title {
         font-family: Poppins;
@@ -87,9 +118,29 @@
     top: 61px;
     border-radius: 27px;
     background: linear-gradient(103deg, #e31e24 39.64%, #262065 83.65%);
+    @media screen and (max-width: $mobile) {
+      width: 104.697px;
+      height: 104.824px;
+      transform: rotate(45deg);
+      border-radius: 15.055px;
+      left: -120px;
+      top: 25px;
+    }
+  }
+}
+.ButtonOnDesktop {
+  display: block;
+  @media screen and (max-width: $mobile) {
+    display: none;
   }
 }
 
-
-
-
+.ButtonOnMobile {
+  display: none;
+  @media screen and (max-width: $mobile) {
+    margin-top: 50px;
+    display: block;
+    align-self: center;
+    justify-self: center;
+  }
+}

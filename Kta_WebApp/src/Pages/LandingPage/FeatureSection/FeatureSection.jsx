@@ -13,7 +13,10 @@ const FeatureSection = () => {
           <p className={styles.SubHeading}>Why KTA Solutions?</p>
         </div>
         <p className={styles.Text}>Here's why :) </p>
-        <GradientButton text={"About Us"} />
+        <GradientButton
+          text={"About Us"}
+          customStyles={styles.ButtonOnDesktop}
+        />
       </div>
       <div className={styles.RightSection}>
         {featureData.map((feature, index) => {
@@ -25,11 +28,8 @@ const FeatureSection = () => {
             </div>
           );
         })}
-
-
-
-
       </div>
+      <GradientButton text={"About Us"} customStyles={styles.ButtonOnMobile} />
       <div className={styles.LeftSectionRectangle}></div>
     </div>
   );
