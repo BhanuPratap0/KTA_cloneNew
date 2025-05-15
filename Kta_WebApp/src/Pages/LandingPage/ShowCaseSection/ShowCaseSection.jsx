@@ -23,7 +23,7 @@ const ShowCaseSection = () => {
         <div className={styles.SubHeading}>
           Discover our range of industry-leading products.
         </div>
-      </div>
+
       <div className={styles.ProductsContainerDesktop}>
         <div className="slider-container">
           <Slider {...settings}>

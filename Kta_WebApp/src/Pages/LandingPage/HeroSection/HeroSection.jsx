@@ -11,7 +11,7 @@ function HeroSection() {
         slidesToShow: 3,
         slidesToScroll: 1,
         waitForAnimate: false,
-        autoplay: true,
+        autoplay: false,
         speed: 4000,
         autoplaySpeed: 4000,
         
