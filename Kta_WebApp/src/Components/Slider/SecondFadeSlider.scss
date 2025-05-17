@@ -31,7 +31,8 @@ $mobile: 768px;
   top: 55px;
   gap: 1rem;
   margin-left: 10vw;
-  width: 375px;
+  max-width: 375px;
+  width: fit-content;
 
   @media (max-width: $mobile) {
     gap: 0;
