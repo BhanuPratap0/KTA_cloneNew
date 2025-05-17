@@ -16,34 +16,9 @@ function CenterSlider() {
     autoplay: true,
     autoplaySpeed: 9000,
 
-
-    // responsive: [
-    //   {
-    //     breakpoint: 768,
-    //     settings: {
-    //       arrows: false,
-    //       centerMode: true,
-    //       centerPadding: "40px",
-    //       slidesToShow: 1,
-    //       autoplay: true,
-    //       autoplaySpeed: 9000,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       arrows: true,
-    //       centerMode: true,
-    //       centerPadding: window.innerWidth > 427 ? "15%" : "13%",
-    //       slidesToShow: 1,
-    //       autoplay: true,
-    //       autoplaySpeed: 9000,
-    //     },
-    //   },
-    // ],
-  };
+};
   return (
-    <div className="slider-container">
+    <div id="centerSlider" className="slider-container">
       <Slider {...settings}>
         <div>
           <img src={materialOneImg} alt="" />

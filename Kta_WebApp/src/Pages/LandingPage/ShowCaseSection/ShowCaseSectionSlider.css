@@ -1,14 +1,14 @@
-#show {
+#showDesk {
   .slider-container {
     width: 80%;
-    
     margin: 0 auto; /* Centers the slider */
     overflow: hidden;
   }
-
   /* Making the Track Use the Full Width */
   .slick-track {
     display: flex !important;
+    justify-content: center !important;
+
   }
 
   /* Center the Cards */
@@ -48,7 +48,7 @@
     font-size: 2rem !important;
     color: black !important; /* Adjust arrow color */
     position: absolute;
-    right: 10%;
+    /* right: 35%; */
     top: 40%;
   }
 }

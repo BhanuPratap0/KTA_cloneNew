@@ -55,9 +55,7 @@
     padding-top: 13%;
     padding-left: 7%;
   }
-  
 
-  
   .heroBannerSecondHeading {
     color: #fff;
     font-family: Manrope;
@@ -78,7 +76,6 @@
 
   /* // */
 
-  
   .heroBannerThird {
     background-image: url(/assets/LandingPage/HeroSection/HeroTwo.png);
     background-repeat: no-repeat;
@@ -94,9 +91,7 @@
     padding-top: 13%;
     padding-left: 7%;
   }
-  
 
-  
   .heroBannerThirdHeading {
     color: #fff;
     font-family: Manrope;
@@ -114,4 +109,60 @@
     font-weight: 400;
     line-height: normal;
   }
+
+
+  
+  @media (max-width: 786px) {
+    .heroBannerFirst {
+      background-size: contain !important;
+      height: 250px !important;
+    }
+    .heroBannerFirstBlock {
+      padding-top: 5% !important;
+      padding-left: 5% !important;
+      gap: 1rem !important;
+    }
+    .heroBannerFirstHeading {
+      font-size: 16px !important;
+    }
+    .heroBannerFirstDetails {
+      font-size: 10px !important;
+    }
+
+    /* //second */
+    .heroBannerSecond {
+      background-size: contain !important;
+      height: 250px !important;
+
+    }
+    .heroBannerSecondBlock {
+      padding-top: 5% !important;
+      padding-left: 5% !important;
+      gap: 1rem !important;
+    }
+    .heroBannerSecondHeading {
+      font-size: 16px !important;
+    }
+    .heroBannerSecondDetails {
+      font-size: 10px !important;
+    }
+    /* //third */
+    .heroBannerThird {
+      background-size: contain !important;
+      height: 250px !important;
+    }
+    .heroBannerThirdBlock {
+      padding-top: 5% !important;
+      padding-left: 5% !important;
+      gap: 1rem !important;
+    }
+    .heroBannerThirdHeading {
+      font-size: 16px !important;
+    }
+    .heroBannerThirdDetails {
+      font-size: 10px !important;
+    }
+  }
+
+
 }

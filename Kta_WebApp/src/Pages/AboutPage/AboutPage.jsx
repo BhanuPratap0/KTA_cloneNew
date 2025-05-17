@@ -8,7 +8,7 @@ import missionSvg from "@/assets/AboutPage/missionSVG.svg";
 import visionSvg from "@/assets/AboutPage/visionSVG.svg";
 function AboutPage() {
   return (
-    <div>
+    <>
       <div id={styles.HeroBanner}>
         <img src={heroBanner} alt="hero banner" />
       </div>
@@ -85,7 +85,7 @@ function AboutPage() {
           <div className={styles.OutlineButton}>Explore our World</div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
