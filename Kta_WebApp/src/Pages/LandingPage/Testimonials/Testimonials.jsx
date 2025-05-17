@@ -58,7 +58,7 @@ const Testimonials = () => {
           onClick={scrollLeft}
         >
             
-            <img src="/Assets/LandingPage/left-arrow.svg" alt="" />
+            <img src="/assets/LandingPage/left-arrow.svg" alt="" />
         </button>
           )}
         <div className={styles.TestiCards} ref={testiCardsRef}>
@@ -71,7 +71,7 @@ const Testimonials = () => {
           className={`${styles.ScrollButton} ${styles.Right}`}
           onClick={scrollRight}
         >
-            <img src="/Assets/LandingPage/right-arrow.svg" alt="" />
+            <img src="/assets/LandingPage/right-arrow.svg" alt="" />
         </button>
           )}
       </div>
